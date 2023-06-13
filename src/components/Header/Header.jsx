@@ -1,7 +1,4 @@
-import React from 'react';
-
-
-const App = () => {
+const Header = () => {
     return (
         <div>
             <h1>Voyage Serein</h1>
@@ -10,4 +7,4 @@ const App = () => {
 }
 
 
-export default App;
+export default Header;
