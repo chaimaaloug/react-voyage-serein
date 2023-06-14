@@ -1,4 +1,8 @@
 .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
     color: #FFF;
     background-color: #07006F;
     border: 1px solid #07006F;
@@ -19,9 +23,40 @@
 }
 
 .buttonOutline {
+    color: #07006F;
+    background-color: #fff;
+    border: 1px solid #CCE7F0;
 
+    &.buttonSecondary {
+        fill: #07172A;
+        background-color: #CCE7F0;
+        border: 1px solid #CCE7F0;
+    }
+    &.buttonTertiary {
+        fill: #07172A;
+        color: #B0B0B0;
+        background-color: #fff;
+        border: 1px solid #CCE7F0;
+    }
+}
+
+.buttonLink {
+    color: #07006F;
+    fill: #07172A;
+
+    // &.buttonSecondary {
+    //     fill: #07172A;
+    //     background-color: #CCE7F0;
+    //     border: 1px solid #CCE7F0;
+    // }
+    // &.buttonTertiary {
+    //     fill: #07172A;
+    //     color: #B0B0B0;
+    //     background-color: #fff;
+    //     border: 1px solid #CCE7F0;
+    // }
 }
 
 .buttonIconOnly {
-    
+    padding: 0 1.6rem;
 }
