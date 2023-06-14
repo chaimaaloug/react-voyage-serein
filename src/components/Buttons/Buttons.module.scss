@@ -1,8 +1,27 @@
 .button {
-    color: #000;
-    background-color: beige;
-    border: 1px solid beige;
-    border-radius: 100rem;
-    min-height: 42px;
-    padding: 0 1.6rem;
+    color: #FFF;
+    background-color: #07006F;
+    border: 1px solid #07006F;
+    min-height: 5.6rem;
+    padding: 0 3.2rem;
+    font-size: 16px;
+    
+    &.buttonSecondary {
+        background-color: #57647B;
+        border: 1px solid #57647B;
+    }
+    &.buttonTertiary {
+        fill: #07172A;
+        color: #07172A;
+        background-color: #CCE7F0;
+        border: 1px solid #CCE7F0;
+    }
+}
+
+.buttonOutline {
+
+}
+
+.buttonIconOnly {
+    
 }
