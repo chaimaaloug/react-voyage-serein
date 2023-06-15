@@ -4,6 +4,7 @@ import { getPlacesData } from '../api/api';
 import TabsBar from '../components/TabsBar/TabsBar'
 import Tab from '../components/Tab/Tab'
 import { Link } from 'react-router-dom';
+import Badge from './components/Badge/Badge';
 
 const Home = () => {
 
@@ -19,6 +20,7 @@ const Home = () => {
     return (
         <div>
             <h1>Voyage Serein - Home Page</h1>
+            <Badge text="Badge1"/>
             <Button text="bouton" />
             <Button text="bouton" outline />
             <TabsBar>
