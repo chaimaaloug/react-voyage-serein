@@ -4,7 +4,7 @@ import { getPlacesData } from '../api/api';
 import TabsBar from '../components/TabsBar/TabsBar'
 import Tab from '../components/Tab/Tab'
 import { Link } from 'react-router-dom';
-import Badge from './components/Badge/Badge';
+import Badge from '../components/Badge/Badge';
 
 const Home = () => {
 
