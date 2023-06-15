@@ -14,9 +14,9 @@
 
 .tabActive {
     background-color: #EDF1FF;
-    color: #07006F;
-    border-bottom: 2px solid #07006F;
-    fill: #07006F;
+    color: var(--bleu-marine);
+    border-bottom: 2px solid var(--bleu-marine);
+    fill: var(--bleu-marine);
 }
 
 .tabColumn {
