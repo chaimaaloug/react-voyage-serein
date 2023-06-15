@@ -1,0 +1,24 @@
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #636363;
+    fill: #636363;
+    background-color: #F3F3F3;
+    border-bottom: 2px solid #B0B0B0;
+    padding: 1.2rem 1.6rem;
+}
+
+.tabActive {
+    background-color: #EDF1FF;
+    color: #07006F;
+    border-bottom: 2px solid #07006F;
+    fill: #07006F;
+}
+
+.tabColumn {
+    flex-direction: column;
+}

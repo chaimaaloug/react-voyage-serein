@@ -1,0 +1,63 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    color: #FFF;
+    background-color: #07006F;
+    border: 1px solid #07006F;
+    min-height: 5.6rem;
+    padding: 0 3.2rem;
+    font-size: 16px;
+    
+    &.buttonSecondary {
+        background-color: #57647B;
+        border: 1px solid #57647B;
+    }
+    &.buttonTertiary {
+        fill: #07172A;
+        color: #07172A;
+        background-color: #CCE7F0;
+        border: 1px solid #CCE7F0;
+    }
+}
+
+.buttonOutline {
+    color: #07006F;
+    background-color: #fff;
+    border: 1px solid #CCE7F0;
+
+    &.buttonSecondary {
+        fill: #07172A;
+        background-color: #CCE7F0;
+        border: 1px solid #CCE7F0;
+    }
+    &.buttonTertiary {
+        fill: #07172A;
+        color: #B0B0B0;
+        background-color: #fff;
+        border: 1px solid #CCE7F0;
+    }
+}
+
+.buttonLink {
+    color: #07006F;
+    fill: #07172A;
+
+    // &.buttonSecondary {
+    //     fill: #07172A;
+    //     background-color: #CCE7F0;
+    //     border: 1px solid #CCE7F0;
+    // }
+    // &.buttonTertiary {
+    //     fill: #07172A;
+    //     color: #B0B0B0;
+    //     background-color: #fff;
+    //     border: 1px solid #CCE7F0;
+    // }
+}
+
+.buttonIconOnly {
+    width: 5.6rem;
+    padding: 0 1.6rem;
+}
