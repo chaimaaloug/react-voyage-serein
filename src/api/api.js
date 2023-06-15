@@ -1,41 +1,23 @@
-/* eslint-disable consistent-return */
-import axios from 'axios';
 
-export const getPlacesData = async (type, sw, ne) => {
+ //Fetch data from TravelAdvisor api
+const URL = 'https://travel-advisor.p.rapidapi.com/attractions/list-in-boundary?tr_longitude=109.262909&tr_latitude=12.346705&bl_longitude=109.095887&bl_latitude=12.113245&currency=USD&lunit=km&lang=en_US';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '2040471378msh40708ad7e3bf713p1b510fjsna9f220ff1641',
+		'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+	}
+};
+
+export const getPlacesData = async () => {
   try {
-    const { data: { data } } = await axios.get(`https://travel-advisor.p.rapidapi.com/${type}/list-in-boundary`, {
-      params: {
-        bl_latitude: sw.lat,
-        bl_longitude: sw.lng,
-        tr_longitude: ne.lng,
-        tr_latitude: ne.lat,
-      },
-      headers: {
-        'x-rapidapi-key': process.env.REACT_APP_RAPID_API_TRAVEL_API_KEY,
-        'x-rapidapi-host': 'travel-advisor.p.rapidapi.com',
-      },
-    });
-
-    return data;
+    const response = await fetch(URL, options);
+    const result = await response.text();
+    console.log(result);
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 };
 
-export const getWeatherData = async (lat, lng) => {
-  try {
-    if (lat && lng) {
-      const { data } = await axios.get('https://community-open-weather-map.p.rapidapi.com/find', {
-        params: { lat, lon: lng },
-        headers: {
-          'x-rapidapi-key': process.env.REACT_APP_RAPID_API_WEATHER_API_KEY,
-          'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com',
-        },
-      });
 
-      return data;
-    }
-  } catch (error) {
-    console.log(error);
-  }
-};
+

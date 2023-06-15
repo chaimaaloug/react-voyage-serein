@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import { getPlacesData } from './api/api';
 import './App.scss';
 import Button from './components/Button/Button'
 import TabsBar from './components/TabsBar/TabsBar'
@@ -7,8 +8,19 @@ import Tab from './components/Tab/Tab'
 
 
 const App = () => {
+
+    const [places, setPlaces] = useState([])
+    //get data from TravelAdvisor api
+    useEffect(() => {
+        getPlacesData()
+            .then((data) => {
+                setPlaces(data)
+            });
+    }, []);
+
     return (
         <div>
+           
             <h1>Voyage Serein</h1>
             <Button text="bouton" />
             <Button text="bouton" outline />
@@ -21,6 +33,5 @@ const App = () => {
         </div>
     );
 }
-
 
 export default App;
