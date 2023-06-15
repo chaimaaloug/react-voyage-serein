@@ -1,4 +1,4 @@
-import style from "./TabsItem.module.scss"
+import style from "./Tab.module.scss"
 import classNames from "classnames";
 
 const Tab = (props) => {
