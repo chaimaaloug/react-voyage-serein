@@ -3,57 +3,57 @@
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
-    color: #FFF;
-    background-color: #07006F;
-    border: 1px solid #07006F;
+    color: var(--blanc);
+    background-color: var(--bleu-marine);
+    border: 1px solid var(--bleu-marine);
     min-height: 5.6rem;
     padding: 0 3.2rem;
     font-size: 16px;
     
     &.buttonSecondary {
-        background-color: #57647B;
-        border: 1px solid #57647B;
+        background-color: var(--noir-900);
+        border: 1px solid var(--noir-900);
     }
     &.buttonTertiary {
-        fill: #07172A;
-        color: #07172A;
-        background-color: #CCE7F0;
-        border: 1px solid #CCE7F0;
+        fill: var(--noir);
+        color: var(--noir);
+        background-color: var(--Turquoise-100);
+        border: 1px solid var(--Turquoise-100);
     }
 }
 
 .buttonOutline {
-    color: #07006F;
-    background-color: #fff;
-    border: 1px solid #CCE7F0;
+    color: var(--bleu-marine);
+    background-color: var(--blanc);
+    border: 1px solid var(--Turquoise-100);
 
     &.buttonSecondary {
-        fill: #07172A;
-        background-color: #CCE7F0;
-        border: 1px solid #CCE7F0;
+        fill: var(--noir);
+        background-color: var(--Turquoise-100);
+        border: 1px solid var(--Turquoise-100);
     }
     &.buttonTertiary {
-        fill: #07172A;
-        color: #B0B0B0;
-        background-color: #fff;
-        border: 1px solid #CCE7F0;
+        fill: var(--noir);
+        color: var(--blanc-400);
+        background-color: var(--blanc);
+        border: 1px solid var(--Turquoise-100);
     }
 }
 
 .buttonLink {
-    color: #07006F;
-    fill: #07172A;
+    color: var(--bleu-marine);
+    fill: var(--noir);
 
     // &.buttonSecondary {
-    //     fill: #07172A;
-    //     background-color: #CCE7F0;
-    //     border: 1px solid #CCE7F0;
+    //     fill: var(--noir);
+    //     background-color: var(--Turquoise-100);
+    //     border: 1px solid var(--Turquoise-100);
     // }
     // &.buttonTertiary {
-    //     fill: #07172A;
-    //     color: #B0B0B0;
-    //     background-color: #fff;
-    //     border: 1px solid #CCE7F0;
+    //     fill: var(--noir);
+    //     color: var(--blanc-400);
+    //     background-color: var(--blanc);
+    //     border: 1px solid var(--Turquoise-100);
     // }
 }
 

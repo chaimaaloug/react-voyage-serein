@@ -1,8 +1,10 @@
-//Abstract
+// Elements
+@import "scss/elements/_page";
 
+//Abstracts
 @import "scss/abstracts/_font";
 
 //Setting
-
 @import "scss/settings/_reset";
 @import "scss/settings/_normalize";
+@import "scss/settings/_variables";

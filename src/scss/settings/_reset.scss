@@ -75,7 +75,7 @@ input,
 button,
 textarea,
 select {
-	  font: 'Quicksand', sans-serif;
+	  font: var(--font-secondary);
 }
 
 button {
