@@ -1,11 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from '../components/Button/Button'
 import { getPlacesData } from '../api/api';
-import TabsBar from '../components/TabsBar/TabsBar'
-import Tab from '../components/Tab/Tab'
 import { Link } from 'react-router-dom';
-import { Badge } from '@material-ui/core';
-
+import Badge from '../components/Badge/Badge';
+import BackgroundVideo from '../components/BackgroundVideo/BackgroundVideo';
 
 const Home = () => {
 
@@ -20,22 +18,20 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Voyage Serein - Home Page</h1>
+            <BackgroundVideo url="https://www.youtube.com/embed/CLk7A7HXhYQ" />
+            <h1>Lorem Ipsum,loret</h1>
+            <p>Lorem Ipsum, loret tout ca Lorem Ipsum, loret tout ca</p>
+            <div>
+                <Button text="Me laisser porter" />
+                <Button text="Au hasard" outline />
+            </div>
             <Badge text="Badge1"/>
-            <Button text="bouton" />
-            <Button text="bouton" outline />
-            <TabsBar>
-                <Tab text="Potato"/>
-                <Tab text="Potato" active/>
-                <Tab text="Potato"/>
-            </TabsBar>
-
             <Link to="/contact">Link to contact page</Link> <br />
             <Link to="/about">Link to contact about</Link>
         </div>
     );
 
-} 
+}
 
 
 export default Home;
