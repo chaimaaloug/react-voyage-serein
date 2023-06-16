@@ -4,7 +4,8 @@ import { getPlacesData } from '../api/api';
 import TabsBar from '../components/TabsBar/TabsBar'
 import Tab from '../components/Tab/Tab'
 import { Link } from 'react-router-dom';
-import Badge from './components/Badge/Badge';
+import { Badge } from '@material-ui/core';
+
 
 const Home = () => {
 
@@ -31,7 +32,6 @@ const Home = () => {
 
             <Link to="/contact">Link to contact page</Link> <br />
             <Link to="/about">Link to contact about</Link>
-            <p>Css Testing</p>
         </div>
     );
 
