@@ -3,13 +3,15 @@ import classNames from "classnames";
 
 const BackgroundVideo = (props) => {
     const { url } = props
-
+    
     const classes = classNames(
         style.BackgroundVideo, {
     });
     
     return (
-        <iframe className={classes} src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div className={classes}>
+            <iframe src={url + "?controls=0&autoplay=1&mute=1&playsinline=1&loop=1"} title="YouTube video player"></iframe>
+        </div>
     );
 }
 

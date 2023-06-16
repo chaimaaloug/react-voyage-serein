@@ -8,3 +8,11 @@
 @import "scss/settings/_reset";
 @import "scss/settings/_normalize";
 @import "scss/settings/_variables";
+
+// Utilities
+
+@import "scss/utilities/_flex";
+@import "scss/utilities/_font";
+@import "scss/utilities/_layout";
+@import "scss/utilities/_spacing";
+@import "scss/utilities/_text";
