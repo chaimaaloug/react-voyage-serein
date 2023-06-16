@@ -1,16 +1,22 @@
 // Elements
 @import "scss/elements/_page";
 
+//layout
+@import "scss/layout/_home";
+
 //Abstracts
 @import "scss/abstracts/_font";
 
 //Setting
-@import "scss/settings/_reset";
+@import "scss/settings/_breakpoint";
+@import "scss/settings/_mixins";
 @import "scss/settings/_normalize";
+@import "scss/settings/_reset";
 @import "scss/settings/_variables";
 
 // Utilities
 
+@import "scss/utilities/_color";
 @import "scss/utilities/_flex";
 @import "scss/utilities/_font";
 @import "scss/utilities/_layout";
