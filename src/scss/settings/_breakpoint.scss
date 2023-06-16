@@ -1,0 +1,28 @@
+/*
+* Variables liées aux breackpoints.
+*
+* Ajout de nouveaux breakpoints 10 unité = 10px:
+* Exemple :
+*    - lg100 = lg + 100px
+*    - md50  = md + 50px
+*/
+
+
+$breakpoints: (
+  xlg       : 1600px,
+  lg        : 1200px,
+  md        : 960px,
+  sm        : 767px,
+  xs        : 450px,
+  xxs       : 320px,
+);
+
+
+@function bp($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return map-get($breakpoints, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $breakpoints.";
+  @return null;
+}
