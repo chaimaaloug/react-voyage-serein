@@ -3,6 +3,7 @@ import Button from '../components/Button/Button'
 import { getPlacesData } from '../api/api';
 import { Link } from 'react-router-dom';
 import Badge from '../components/Badge/Badge';
+import BackgroundVideo from '../components/BackgroundVideo/BackgroundVideo';
 
 const Home = () => {
 
@@ -17,7 +18,7 @@ const Home = () => {
 
     return (
         <div>
-            <iframe class="video" src="https://www.youtube.com/embed/CLk7A7HXhYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <BackgroundVideo url="https://www.youtube.com/embed/CLk7A7HXhYQ" />
             <h1>Lorem Ipsum,loret</h1>
             <p>Lorem Ipsum, loret tout ca Lorem Ipsum, loret tout ca</p>
             <div>
