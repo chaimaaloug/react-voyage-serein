@@ -1,0 +1,23 @@
+@import "../../scss/settings/variables";
+
+.container {
+    width: 100%;
+    height: 100vh;
+    line-height: 1.2;
+    background-image: url("../../assets/background/back.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--bleu-marine);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .description, 
+    .parag {
+        margin: 2.77rem 0;
+        font-size: 24px;
+    }
+}
+
+ 
