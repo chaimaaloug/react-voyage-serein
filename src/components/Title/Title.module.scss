@@ -1,0 +1,9 @@
+@import "../../scss//settings/variables";
+
+.title {
+    color: var(--bleu-marine);
+    font-size: 64px;
+    text-align: center;
+    font-weight: 600;
+    font-family:  var(--font-secondary);
+}
