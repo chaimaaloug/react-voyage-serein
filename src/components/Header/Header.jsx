@@ -13,8 +13,8 @@ const Header = () => {
 
   return (
     <header className={classes}>
-      <div>
-        <img src={logo} className='u-flex-shrink-none' />
+      <div className='u-flex-shrink-none'>
+        <img src={logo} />
       </div>
       <div className={style.HeaderNav}>
         <div className={style.HeaderLinks}>
