@@ -1,18 +1,13 @@
-import style from "./Badge.module.scss";
+import style from "./Tag.module.scss";
 import classNames from "classnames";
-import image from "../../assets/x-01.svg"
 
 
-const Badge = (props) => {
-    const { text, callBack, outline, iconOnly, link, color } = props
+const Tag = (props) => {
+    const { text, callBack, outline, } = props
 
     const classes = classNames(
-        style.badge, {
-        [style.badgeOutline]: outline,
-        [style.badgeIconOnly]: iconOnly,
-        [style.badgeLink]: link,
-        [style.badgeSecondary]: color==='secondary',
-        [style.badgeTertiary]: color==='tertiary',
+        style.tag, {
+        [style.tagOutline]: outline,
     });
 
     return (
@@ -31,4 +26,4 @@ const Badge = (props) => {
 
 }
 
-export default Badge;
+export default Tag;
