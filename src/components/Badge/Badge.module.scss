@@ -6,26 +6,26 @@ body {
     font-family: var(--font-primary);
     font-weight: 700;
     font-size: 16px;
+    line-height: 24px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 1.6rem;
+    gap: 8px;
     color: var(--bleu-marine);
     background-color: var(--bleu-marine-50);
-    border: 1px solid var(--bleu-marine-50);
     height: 40px;
     border-radius: 80px;
     overflow: hidden;
     
     & label {
         float: left;
-        line-height: 3.0em;
-        width: 8.0em;
-        height: 3.0em;
+        // line-height: 3.0em;
+        // width: 8.0em;
+        // height: 3.0em;
 
         & span {
             text-align: center;
-            padding: 0;
+            padding: 8px 16px;
             display: block;
         }
 
@@ -42,11 +42,9 @@ body {
             &:checked + span {
                 color: var(--blanc);
                 background-color: var(--bleu-marine-900);
-                border: 1px solid var(--bleu-marine-900);
 
                 &:hover {
                     background-color: var(--bleu-marine);
-                    border: 1px solid var(--bleu-marine);
                 }
             }
         }
@@ -54,10 +52,11 @@ body {
         &:hover {
             background-color: var(--bleu-marine-100);
         }
-      }
-      &:active {
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
-      }
+    }
+    &:active {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    }
+}
 
 //     &:focus-visible {
 //         background-color: green;
@@ -76,7 +75,7 @@ body {
 //     //     stroke: white;
 //     //     display: none;
 //     // }
-}
+
 // // label input {
 // //     display: none;
 // // }
