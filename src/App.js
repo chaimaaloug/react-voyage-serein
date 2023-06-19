@@ -5,8 +5,9 @@ import About from './pages/About/About'
 import NotFound from './pages/NotFound/NotFound';
 import Onboarding from './pages/Onboarding/Onboarding';
 import OnboardingHasard from './pages/Onboarding/OnboardingHasard';
-import './App.scss';
+import Distance from './pages/Distance/Distance';
 import BestPlaceCard from './pages/BestPlace/BestPlace';
+import './App.scss';
 
 export default function App() {
   return (
@@ -17,8 +18,9 @@ export default function App() {
         <Route path="/onboarding-hasard" element={<OnboardingHasard />} />
         <Route path="/best-places" element={<BestPlaceCard />} />
         <Route path="/about" element={<About />} />
+        <Route path="/distance" element={<Distance />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
-  )
+  );
 }

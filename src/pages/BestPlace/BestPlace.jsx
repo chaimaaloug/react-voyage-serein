@@ -1,6 +1,9 @@
 import Title from "../../components/Title/Title";
 import Button from "../../components/Button/Button"
 import CardList from "../../components/Cards/Card";
+import style from "./BestPlace.module.scss"
+import { Icon } from "semantic-ui-react";
+import { useNavigate } from 'react-router-dom';
  
 const BestPlaceCard = () => {
 
@@ -22,11 +25,24 @@ const BestPlaceCard = () => {
         },
     ];
 
+    const navigate = useNavigate();
+
+    const navigateToDistance = () => {
+        navigate('/distance');
+    };
+
     return (
-        <div>
+        <div className={style.container}>
+            <p className={style.step}>1/4</p>
             <Title title="Vous avez préféré..." />
+            <div className={style.shuffle}>
+                <Icon name="shuffle" size="large" className={style.icon}/>
+                <p>Choisir pour moi</p>
+            </div>
             <CardList data={data} />
-            <Button  text="Passer à la distance" />
+            <div className={style.button}>
+                <Button text="Passer à la distance" onClick={navigateToDistance}/>
+            </div>
         </div>
     );
 } 

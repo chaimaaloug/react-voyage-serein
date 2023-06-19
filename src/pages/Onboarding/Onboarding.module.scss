@@ -12,6 +12,12 @@
     justify-content: center;
     text-align: center;
 
+    .step {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--bleu-marine-900);
+    }
+
     .description, 
     .parag {
         margin: 2.77rem 0;
