@@ -1,17 +1,18 @@
 .l-home {
-    display: flex;
-    align-items: flex-end;
-    min-height: 100vh;
-
-    @media (max-width: 960px) {
-        align-items: center;
-    }
+    background-image: url("../../assets/background/home-back.jpg");
+    background-size: cover;
+    background-position: center bottom;
 }
 
 .l-home__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
     padding: 3.2rem 0 21rem 0;
 
     @media (max-width: 960px) {
+        justify-content: center;
         padding: 0;
     }
 }
