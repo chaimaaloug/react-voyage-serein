@@ -10,7 +10,7 @@ const Button = (props) => {
         [style.buttonIconOnly]: iconOnly,
         [style.buttonLink]: link,
         [style.ButtonSecondary]: color === 'primary',
-        [style.ButtonTertiary]: color === 'tertiary',
+        [style.ButtonTertiary]: color === 'secondary',
     });
 
     return (
