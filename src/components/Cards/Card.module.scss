@@ -1,0 +1,35 @@
+
+.cardList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 25px;
+    padding: 4rem;
+}
+
+.card {
+    text-align: center;
+    position: relative;
+ 
+}
+
+.card img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--bleu-marine);
+    font-family: var(--font-primary);
+    text-align: left;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 72.4%), rgba(255, 255, 255, 0.4);
+}

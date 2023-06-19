@@ -40,8 +40,6 @@ const Home = () => {
                             <Button text="Laisser le hasard choisir à ma place" onClick={navigateToOnboardingHasard} outline />
                             <Button text="Me laisser guider " onClick={navigateToOnboarding} />
                         </div>
-                        {/* <Link to="/contact">Link to contact page</Link> <br />
-                <Link to="/about">Link to contact about</Link> */}
                     </div>
                 </div>
             </div>
