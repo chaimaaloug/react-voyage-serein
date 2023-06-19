@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Button from '../components/Button/Button'
 import { getPlacesData } from '../api/api';
 import {useNavigate} from 'react-router-dom';
-import BackgroundVideo from '../components/BackgroundVideo/BackgroundVideo';
 import Header from "../components/Header/Header";
 import Footer from '../components/Footer/Footer';
 import BackgroundImage from '../components/BackgroundImage/BackgroundImage';
