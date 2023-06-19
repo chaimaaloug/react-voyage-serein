@@ -2,7 +2,7 @@
 @import "../../scss/settings/variables";
 
 .container {
-    background: url("../../assets/background/back2.png");
+    background: url("../../assets/background/back.jpg");
     height: 1316px;
     background-size: cover;
     background-position: center;
@@ -57,30 +57,46 @@
   //----------- Third Section -----------//
   .testimonials {
     background: radial-gradient(54.34% 54.88% at 19.65% 48.05%, rgba(255, 229, 0, 0.5) 20.46%, rgba(255, 229, 1, 0) 100%), radial-gradient(49.9% 45.36% at 47.85% 2.69%, #FF8700 0%, rgba(252, 133, 0, 0) 100%), radial-gradient(34.85% 60.87% at 67.88% -2.25%, rgba(255, 135, 0, 0.7) 0%, rgba(252, 133, 0, 0) 100%), radial-gradient(34.77% 77.22% at 96.63% -8.74%, rgba(239, 64, 53, 0.8) 0%, rgba(239, 64, 53, 0) 91.15%), #D1DCFF;
-    padding: 10rem !important;
+    padding: 3rem !important;
+    height: 642px;
 
     .leftCol {
         border-radius: 16px;
+        height: 270px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 72.4%), rgba(255, 255, 255, 0.4);
+        padding: 25px 44px !important;
 
         h3 {
-            font-size: 24px;
+            font-size: 24px !important;
             font-weight: "700";
+            margin-bottom: 1.89rem;
             font-size: var(--font-secondary);
         }
+
 
         .flexLeftCol {
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
+
+            .icon {
+                color: #FFE500;
+                margin-bottom: 2rem;
+            }
+    
+            .author {
+                margin-top: 1.88rem;
+                text-align: right;
+            }
         }
 
-        .icon {
-            color: #FFE500;
-        }
     }
 
     .rightCol {
+        padding: 28px !important;
+        height: 552px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 72.4%), rgba(255, 255, 255, 0.4);
+        border-radius: 16px;
 
         .title {
             font-size: 42px;
@@ -96,8 +112,25 @@
             font-weight: 400;
             line-height: 24px;
         }
+
+        .parag {
+            margin: 3rem 0;
+        }
     }
 }
 
 
+@media screen and (max-width: 768px) {
+    .testimonials {
+        background-size: contain;
+        background-position: top;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .testimonials {
+        background-size: contain;
+        background-position: top;
+    }
+}
 
