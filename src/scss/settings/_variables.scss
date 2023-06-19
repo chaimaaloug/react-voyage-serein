@@ -11,12 +11,14 @@
     --font-size-32: 3.2rem;
     --font-size-20: 2rem;
     --font-size-16: 1.6rem;
+    --font-size-14: 1.4rem;
     
     // Colors
     --noir: #07172A;
     --noir-900: #57647B;
     --bleu-marine: #07006F;
     --bleu-marine-900: #323EA3;
+    --bleu-marine-700: #4F62CD;
     --bleu-marine-600: #6076DE;
     --bleu-marine-100: #D1DCFF;
     --bleu-marine-50: #EDF1FF;
@@ -38,4 +40,8 @@
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
     --spacing-4: 0.4rem;
+
+    //Glass
+    --glass: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, #FFFFFF 35.42%);
+    --glassHover: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, #FFFFFF 35.42%);
 }
