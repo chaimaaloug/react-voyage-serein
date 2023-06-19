@@ -16,6 +16,7 @@ const Onboarding = () => {
         <>
             <div className={style.container}>
                 <div className={style.text}>
+                    <p className={style.step}>1/4</p>
                     <Title title="Imprégnez vous de votre environnement"/>
                     <p className={style.description}>Nous vous présenterons une sélection de vidéos d'ambiance qui représentent différents styles de voyage. <br />
                         Vous pourrez ainsi choisir le style qui correspond le mieux à vos aspirations et à vos préférences de voyage. <br />
