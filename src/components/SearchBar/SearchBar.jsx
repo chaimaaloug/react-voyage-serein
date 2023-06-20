@@ -10,9 +10,9 @@ const SearchBar = (props) => {
 
     return (
         <div className={classes}>
-            <label for="search">Search the site:</label>
+            <label for="search"></label>
             <input type="search" id="search" name="" placeholder="Rechercher une destination, une activité, une couleur..."/>
-            <button>Search</button>
+            <button></button>
         </div>
     );
 }
