@@ -4,20 +4,26 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    grid-gap: 25px;
+    grid-gap: 44px;
     padding-top: 2.66rem;
 }
 
 .card {
     text-align: center;
+    overflow: hidden;
     position: relative;
- 
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card img {
     width: 100% !important;
     height: 380px !important;
     border-radius: 25px;
+    object-fit: cover;
 }
 
 .card h3 {
