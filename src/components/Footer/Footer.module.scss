@@ -30,6 +30,15 @@
     margin-bottom: 2rem;
 }
 
+.footerLinks a:hover {
+    background-color: var(--bleu-marine);
+    color: var(--blanc);
+    padding: 7px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .mediaLink {
     display: flex;
     margin-bottom: 2rem;
