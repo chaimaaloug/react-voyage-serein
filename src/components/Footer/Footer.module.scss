@@ -1,7 +1,7 @@
 .footer {
     background: var(--glass);
     border-radius: 104px 104px 0px 0px;
-    padding: 5rem 4rem 2.4rem 4rem;
+    padding: 5rem 6rem 2.4rem 6rem;
 }
 
 .footerContent {
@@ -15,4 +15,35 @@
     justify-content: space-between;
     gap: 1.6rem;
     margin-top: 5.8rem;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    color: var(--bleu-marine-700);
+    
+}
+
+.footerLinks a, .footerBottom a {
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.footerLinks a:hover {
+    background-color: var(--bleu-marine);
+    color: var(--blanc);
+    padding: 7px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediaLink {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.mediaLink p{
+    margin-left: 1rem;
 }

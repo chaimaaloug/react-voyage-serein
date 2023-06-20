@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(54.34% 54.88% at 19.65% 48.05%, rgba(255, 229, 0, 0.5) 20.46%, rgba(255, 229, 1, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(49.9% 45.36% at 47.85% 2.69%, #FF8700 0%, rgba(252, 133, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(34.85% 60.87% at 67.88% -2.25%, rgba(255, 135, 0, 0.7) 0%, rgba(252, 133, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(34.77% 77.22% at 96.63% -8.74%, rgba(239, 64, 53, 0.8) 0%, rgba(239, 64, 53, 0) 91.15%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #D1DCFF;
+    color: var(--bleu-marine);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .step {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--bleu-marine-900);
+    }
+
+    .description, 
+    .parag {
+        margin: 2.77rem 0;
+        font-size: 24px;
+    }
+}
+
+
+
+.DistancePage {
+    width: 100vw;
+    height: 100vh;
+}
+
+.MuiSlider-thumb {
+    width: 38px;
+    height: 38px;
+}
+
