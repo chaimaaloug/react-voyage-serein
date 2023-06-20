@@ -1,0 +1,95 @@
+.tag {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--bleu-marine);
+    background-color: var(--bleu-marine-50);
+    height: 40px;
+    border-radius: 80px;
+    overflow: hidden;
+
+    & svg {
+        display: none;
+    }
+    
+    & label {
+        display: flex;
+        align-items: center;
+
+        & input {
+            position: absolute;
+            display: none;
+            
+            /* selects all of the text within the input element and changes the color of the text */
+            & + span {
+                color: var(--bleu-marine);
+                text-align: center;
+                padding: 8px 16px;
+                display: inline-flex;
+            }
+
+            /* This will declare how a selected input will look giving generic properties */
+            &:checked + span {
+                color: var(--blanc);
+                background-color: var(--bleu-marine-900);
+
+                & svg {
+                    display: block;
+                    margin-right: 8px;
+
+                    & path {
+                        stroke: var(--blanc);
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--bleu-marine);
+                }
+            }
+        }
+
+        &:hover {
+            background-color: var(--bleu-marine-100);
+        }
+    }
+    &:active {
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    }
+}
+
+
+.tagOutline {
+    color: var(--bleu-marine);
+    background-color: var(--blanc);
+    border: 1px solid var(--bleu-marine-900);
+
+    & label {
+        &:hover {
+            background-color: var(--bleu-marine-50) !important;
+        }
+
+        /* This will declare how a selected input will look giving generic properties */
+        & input:checked + span {
+            color: var(--bleu-marine);
+            background-color: var(--blanc);
+
+            & svg {
+                display: block;
+                margin-right: 8px;
+
+                & path {
+                    stroke: var(--bleu-marine);
+                }
+            }
+
+            &:hover {
+                background-color: var(--bleu-marine-50);
+            }
+        }
+    }    
+}

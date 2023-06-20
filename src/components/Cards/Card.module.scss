@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     grid-gap: 25px;
-    padding: 4rem;
+    padding-top: 2.66rem;
 }
 
 .card {
@@ -15,7 +15,8 @@
 }
 
 .card img {
-    width: 100%;
+    width: 100% !important;
+    height: 380px !important;
     border-radius: 25px;
 }
 
