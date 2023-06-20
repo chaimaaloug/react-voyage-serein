@@ -24,3 +24,43 @@
         }
     }
 }
+
+/** 3d effect*/
+.linkHeader {
+    text-decoration: none;
+    background: var(--bleu-marine);
+    box-shadow: 0 5px var(--blanc-50);
+    color: #fff;
+    border: none;
+    height: calc(100% - 5px);
+    outline: none;
+    position: relative;
+    transition: all 0.4s ease;
+
+    &:hover {
+        box-shadow: 0 3px var(--blanc-50);
+        color: #fff;
+        top: 1px;
+      }
+
+    &:active {
+        box-shadow: 0 0  var(--blanc-50);
+        color: #fff;
+        top: 5px;
+      }
+  }
+
+  .linkHeaderSecondary {
+    background: #fff;
+    color: var(--bleu-marine);
+    box-shadow: 0 5px  var(--blanc-50);
+    color: var(--bleu-marine-800);
+
+    &:hover {
+        color: var(--bleu-marine);
+      }
+
+    &:active {
+        color: var(--bleu-marine);
+      }
+  }

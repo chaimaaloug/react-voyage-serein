@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import Link from '../Link/Link';
 import SearchBar from '../SearchBar/SearchBar';
@@ -13,16 +14,14 @@ const Header = () => {
 
   return (
     <header className={classes}>
-      <div className='u-flex-shrink-none'>
+      <div className='u-flex-self-center u-flex-shrink-none'>
         <img src={logo} />
       </div>
       <div className={style.HeaderNav}>
         <div className={style.HeaderLinks}>
-          <Link url="#" text="Qui sommes-nous" />
-          <Link url="#" text="Toutes nos destinations" />
-          <div>
-            <Link url="#" text="Trouver une destination" />
-          </div>
+          <Link header color="secondary" url="#" text="Qui sommes-nous" />
+          <Link header color="secondary" url="#" text="Toutes nos destinations" />
+          <Link header url="#" text="Trouver une destination" />
         </div>
         <div>
           <SearchBar></SearchBar>
