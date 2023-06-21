@@ -1,9 +1,12 @@
+import style from './NotFound.module.scss'
+
 
 const NotFound = () => {
    
     return (
-        <main>
-            <h2>Page not found.</h2>
+        <main className={style.container}>
+            <h2 className={style.title}>400</h2>
+            <p className={style.parag}> Page non trouvable.</p>
         </main>
     )
 }

@@ -19,7 +19,7 @@ const Header = () => {
       </div>
       <div className={style.HeaderNav}>
         <div className={style.HeaderLinks}>
-          <Link header color="secondary" url="#" text="Qui sommes-nous" />
+          <Link header color="secondary" url="/about" text="Qui sommes-nous" />
           <Link header color="secondary" url="#" text="Toutes nos destinations" />
           <Link header url="#" text="Trouver une destination" />
         </div>
