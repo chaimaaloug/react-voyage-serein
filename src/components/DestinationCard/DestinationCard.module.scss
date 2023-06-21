@@ -1,0 +1,45 @@
+.DestinationCard {
+    display: flex;
+    max-width: 36.8rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 1.6rem;
+    overflow: hidden;
+}
+
+.DestinationCardContent {
+    display: flex;
+    padding: 1.6rem 1.6rem 2.4rem 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    align-self: stretch;
+    border-right: 1px solid var(--bleu-marine-100);
+    border-bottom: 1px solid var(--bleu-marine-100);
+    border-left: 1px solid var(--bleu-marine-100);
+    background: var(--glass-02);
+    border-radius: 0 0 1.6rem 1.6rem;
+    flex: 0 0 100%;
+}
+
+.DestinationCardTitle {
+    color: #4A4A4A;
+    font-size: 24px;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+}
+
+.DestinationCardDescription {
+    color: #4A4A4A;
+    font-size: 14px;
+}
+
+.DestinationCardList {
+    display: flex;
+    justify-content: space-between;
+    // align-items: stretch;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 4rem 1.6rem;
+}
