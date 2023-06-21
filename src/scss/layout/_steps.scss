@@ -1,26 +1,113 @@
-.l-s-container {
+.l-steps {
     width: 100%;
     height: 100vh;
-    background-image: url("../../assets/background/onboarding-back.jpg");
-    background-size: cover;
-    background-position: bottom;
     color: var(--bleu-marine);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 
-    .step {
+    .l-steps__step {
         font-size: 24px;
         font-weight: 500;
         color: var(--bleu-marine-900);
     }
 
-    .description, 
-    .parag {
+    .l-steps__text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .l-steps__description, 
+    .l-steps__parag {
         margin: 2.77rem 0;
         font-size: 24px;
     }
+
+
+    .l-steps__progressBar {
+        width: 100%;
+        height: 8px;
+        background-color: var(--bleu-marine-50);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .l-steps__progressBarFill {
+        height: 8px;
+        background-color: var(--bleu-marine);
+    }
+    .Fill25 {
+        width: 25%;
+    }
+    .Fill50 {
+        width: 50%;
+    }
+    .Fill75 {
+        width: 75%;
+    }
+    .Fill90 {
+        width: 90%;
+    }
+    .Fill100 {
+        width: 100%;
+    }
+
+    .l-steps__selectCityLabel {
+        margin: 24px 0 24px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .l-steps__selectCity {
+        font-size: 40px;
+        height: 73px;
+        width: 500px;
+        padding: 8px 24px;
+        border: none;
+        box-shadow: 0px 1px 6px rgba(46, 49, 75, 0.15);
+        border-radius: 8px;
+    }
+    
+    .l-steps__distance {
+        font-size: 8em;
+        text-align: center;
+    }
+    .l-steps__jauge {
+        width: calc(90% / 3);
+        height: 50px;
+        accent-color: var(--bleu-marine-800);
+        transform: scale(3);
+        filter: drop-shadow(0px 2px 5px rgba(23, 37, 105, 0.15));
+    }
+    .l-steps__jaugeText {
+        font-family: var(--font-primary);
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: 0em;
+        height: 76px;
+        width: 1013px;
+        left: 214px;
+        top: 218px;
+        border-radius: 8px;
+        padding: 8px 24px 8px 24px;
+        justify-content: space-between;
+        text-align: left;
+        border-radius: 8px;
+        box-shadow: 0px 1px 6px rgba(46, 49, 75, 0.15);
+      }
+    //   input {
+    //     width: 100%;
+    //     margin: 0 10px;
+    //   }
+    //   .slider {
+    //     display: flex;
+    //     justify-content: space-between;
+    //   }
 }
 
  
