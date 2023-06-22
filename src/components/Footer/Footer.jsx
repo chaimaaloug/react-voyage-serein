@@ -24,7 +24,6 @@ const Footer = () => {
                     </p>
                     <div className={style.footerLinks}>
                         <Link url="#" text="Découvrir la destination faite pour moi" />
-                        <Link url="#" text="Voir toutes les destinations" />
                         <Link url="#" text="Nos best-destinations du moment" />
                         <Link url="#" text="Conseil pour voyager" />
                     </div>
