@@ -10,6 +10,8 @@ import DestinationCardList from '../../components/DestinationCard/DestinationCar
 import { Icon } from "semantic-ui-react";
 import Link from '../../components/Link/Link';
 import Rating from '../../components/Rating/Rating';
+import DressingCard from '../../components/DressingCard/DressingCard';
+import ItineraireMap from '../../components/itineraireMap/itineraireMap'
 
 const Destination = () => {
 
@@ -116,12 +118,54 @@ const Destination = () => {
         },
     ];
 
+    const indispensableDressing = [
+        {
+            id: 1,
+            picto: require('../../assets/icons/more.svg'),
+            text: 'T-shirts légers',
+            count: '3'
+        },
+        {
+            id: 2,
+            picto: require('../../assets/icons/more.svg'),
+            text: 'T-shirts manches longues',
+            count: '3'
+        },
+        {
+            id: 3,
+            picto: require('../../assets/icons/more.svg'),
+            text: 'Veste imperméable léger ou poncho',
+            count: '1 ou 2'
+        },
+    ]
+
+    const usefulDressing = [
+        {
+            id: 1,
+            picto: require('../../assets/icons/more.svg'),
+            text: 'T-shirts légers',
+            count: '3'
+        },
+        {
+            id: 2,
+            picto: require('../../assets/icons/more.svg'),
+            text: 'T-shirts manches longues',
+            count: '3'
+        },
+        {
+            id: 3,
+            picto: require('../../assets/icons/more.svg'),
+            text: 'Veste imperméable léger ou poncho',
+            count: '1 ou 2'
+        },
+    ]
+
     return (
         <div className='l-destination'>
             <div className='u-container'>
                 <Header />
                 <div className='l-destination__background'>
-                {/* <BackgroundVideo isMediaVideo fullHeight url={backgroundVideoCover} /> */}
+                    {/* <BackgroundVideo isMediaVideo fullHeight url={backgroundVideoCover} /> */}
                     <BackgroundVideo fullHeight url="https://www.youtube.com/embed/7sQJREI-Pe8" />
                 </div>
                 <div className='l-destination__header'>
@@ -131,7 +175,7 @@ const Destination = () => {
                             <div className='u-flex u-flex-align-center u-flex-gap-8'>
                                 <Rating />
                                 <span className='u-font-12'>
-                                (69 avis)
+                                    (69 avis)
                                 </span>
                             </div>
                             <Link text="Voir les avis" />
@@ -159,7 +203,7 @@ const Destination = () => {
                         </div>
                     </div>
                     <div>
-                        <img src="" alt="" srcset="" />
+                        <ItineraireMap />
                     </div>
                 </div>
                 <div className='u-bgcolor--blanc'>
@@ -204,15 +248,17 @@ const Destination = () => {
                     <div className='u-mt-64'>
                         <p className='u-font-secondary u-font-24 u-font-700 u-mb-24'>Mes tenues en Thaïlande</p>
                         <div className='u-flex u-flex-justify-between u-flex-gap-24'>
-                            <p  className='u-color--bleu-marine-800' style={{ 'max-width': 300 }}>
+                            <p className='u-color--bleu-marine-800' style={{ 'max-width': 300 }}>
                                 Il est inutile de vous surcharger de vêtements avant de partir ! Gardez en tête que s'il vous manque quelque chose, vous aurez la possibilité d’acheter sur place et souvent avec des prix avantageux !
                             </p>
                             <div className='u-flex u-flex-justify-between u-flex-gap-24'>
                                 <div>
                                     <p className='u-font-20 u-font-700 u-mb-16'>Indispensable</p>
+                                    <DressingCard data={indispensableDressing}/>
                                 </div>
                                 <div>
                                     <p className='u-font-20 u-font-700 u-mb-16'>Très utile</p>
+                                    <DressingCard data={usefulDressing}/>
                                 </div>
                             </div>
                         </div>

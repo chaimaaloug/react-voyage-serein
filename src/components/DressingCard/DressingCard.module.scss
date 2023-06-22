@@ -1,0 +1,20 @@
+.DressingCard {
+    display: flex;
+    padding: 1.6rem 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    border-radius: 1.6rem;
+    background: var(--blanc-50);
+    max-width: 42.5rem;
+    width: 100%;
+}
+
+.DressingCardItem {
+    width: 100%;
+    display: flex;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
