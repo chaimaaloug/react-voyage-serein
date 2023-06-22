@@ -22,14 +22,14 @@ const Distance = () => {
                     <div className="l-steps__progressBarFill Fill100" ></div>
                 </div>
                 <div className="l-steps__text">
-                    <video autoPlay muted playsInline loop width={"200px"}>
+                    <video autoPlay muted playsInline loop width={"200px"} style={{ borderRadius: "50px"}}>
                         <source src={videoCharg} type="video/mp4" />
                     </video>
                     <p className="l-steps__step">4/4</p>
                     <Title title="Vos réponses m'ont inspiré"/>
                     <p className="l-steps__description">Encore quelques instants avant de découvrir vos itinéraires de rêves.</p>
                     
-                    <button type="button" className="l-steps__button" disabled>C'est presque prêt</button>
+                    {/* <button type="button" className="l-steps__button" disabled>C'est presque prêt</button> */}
                     <button type="button" className="l-steps__button" onClick={navigateToHome}>C'est prêt !</button>
                 </div>
             </div>
