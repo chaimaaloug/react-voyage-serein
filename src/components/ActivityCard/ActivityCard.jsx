@@ -1,5 +1,6 @@
 import Rating from "../Rating/Rating";
 import style from "./ActivityCard.module.scss"
+import icon from "../../assets/icons/more.svg"
 
 
 
@@ -27,7 +28,8 @@ const ActivityCard = (props) => {
                 <p className={style.activityCardDescription}>
                     {text}
                 </p>
-                <div className="u-flex-self-end">
+                <div className="u-font-16 u-color--bleu-marine u-font-700 u-flex u-flex-align-center u-flex-gap-8 u-flex-self-end">
+                    <img src={icon} alt="" srcset="" width={24} height={24} />
                     Ajouter a mon parcours
                 </div>
             </div>

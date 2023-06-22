@@ -7,7 +7,9 @@ import Footer from '../../components/Footer/Footer';
 import BackgroundVideo from '../../components/BackgroundVideo/BackgroundVideo';
 import ActivityCardList from '../../components/ActivityCard/ActivityCard';
 import DestinationCardList from '../../components/DestinationCard/DestinationCard';
-
+import { Icon } from "semantic-ui-react";
+import Link from '../../components/Link/Link';
+import Rating from '../../components/Rating/Rating';
 
 const Destination = () => {
 
@@ -119,37 +121,64 @@ const Destination = () => {
             <div className='u-container'>
                 <Header />
                 <div className='l-destination__background'>
-                    <BackgroundVideo url="https://www.youtube.com/embed/h2V2mBBXgj4" />
+                {/* <BackgroundVideo isMediaVideo fullHeight url={backgroundVideoCover} /> */}
+                    <BackgroundVideo fullHeight url="https://www.youtube.com/embed/7sQJREI-Pe8" />
                 </div>
                 <div className='l-destination__header'>
-                    <div className='l-destination__card'>
-                        <h2>Thaïlande</h2>
-                        <div></div>
-                        <p>
-                            Prêt à plonger dans une expérience envoûtante et captivante ? Laissez-nous vous transporter vers les merveilles exotiques de la Thaïlande, une destination qui éblouit les sens et laisse des souvenirs impérissables. En partenariat avec notre agence de voyage en ligne, vous êtes sur le point de vivre une aventure inoubliable, guidée par l'essence même de ce pays fascinant.
-                        </p>
+                    <div className='l-destination__card u-flex-gap-32'>
+                        <h2 className='u-font-42 u-font-secondary'>Thaïlande</h2>
+                        <div className='u-flex u-flex-align-center u-flex-gap-32'>
+                            <div className='u-flex u-flex-align-center u-flex-gap-8'>
+                                <Rating />
+                                <span className='u-font-12'>
+                                (69 avis)
+                                </span>
+                            </div>
+                            <Link text="Voir les avis" />
+                        </div>
                         <div>
-                            <p>à partir de <span>800€</span></p>
+                            <p className='u-mb-16'>
+                                Prêt à plonger dans une expérience envoûtante et captivante ? Laissez-nous vous transporter vers les merveilles exotiques de la Thaïlande, une destination qui éblouit les sens et laisse des souvenirs impérissables. En partenariat avec notre agence de voyage en ligne, vous êtes sur le point de vivre une aventure inoubliable, guidée par l'essence même de ce pays fascinant.
+                            </p>
+                            <Link text="En savoir plus" />
+                        </div>
+                        <div className='u-flex u-flex-align-center u-flex-self-end'>
+                            <p className='u-color--bleu-marine'>à partir de <span className='u-font-24 u-font-700'>800€</span></p>
                         </div>
                     </div>
                 </div>
                 <div className='u-bgcolor--blanc'>
                     <h2 className='u-font-primary u-font-32 u-font-400 u-mb-32'>Itinéraire conseillé pour vous</h2>
                     <p className='u-font-24 u-font-700 u-mb-24'>Modifier le parcours :</p>
-                    <iframe
-                        width="600"
-                        height="450"
-                        style={{ border: "0" }}
-                        loading="lazy"
-                        allowFullScreen
-                        referrerPolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA"
-                    >
-                    </iframe>
+                    <div className='u-flex u-flex-gap-32 u-mb-64'>
+                        <div>
+                            <p>Ma mobilité durant le voyage</p>
+                        </div>
+                        <div>
+                            <p>Mon envie de bouger</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="" srcset="" />
+                    </div>
                 </div>
                 <div className='u-bgcolor--blanc'>
                     <h2 className='u-font-primary u-font-32 u-font-400 u-mb-32'>Ajouter des activités à mon voyage</h2>
-                    <p>Modifier le parcours :</p>
+                    <div>
+                        <div className='u-flex'>
+                            <div className="shuffle">
+                                <Icon name="shuffle" size="large" className="icon" />
+                                <p>
+                                    Me proposer des activités au hasard
+                                </p>
+                            </div>
+                            <div>
+                                <Icon name="shuffle" size="large" className="icon" />
+                                Filtrer
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
                     <ActivityCardList data={ActivityList} />
                     <div className='u-mt-32 u-pb-32 u-text-center'>
                         <Button text="Charger plus d'activités" />
@@ -175,7 +204,7 @@ const Destination = () => {
                     <div className='u-mt-64'>
                         <p className='u-font-secondary u-font-24 u-font-700 u-mb-24'>Mes tenues en Thaïlande</p>
                         <div className='u-flex u-flex-justify-between u-flex-gap-24'>
-                            <p style={{ 'max-width': 300 }}>
+                            <p  className='u-color--bleu-marine-800' style={{ 'max-width': 300 }}>
                                 Il est inutile de vous surcharger de vêtements avant de partir ! Gardez en tête que s'il vous manque quelque chose, vous aurez la possibilité d’acheter sur place et souvent avec des prix avantageux !
                             </p>
                             <div className='u-flex u-flex-justify-between u-flex-gap-24'>

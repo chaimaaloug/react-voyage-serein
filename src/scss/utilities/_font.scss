@@ -14,8 +14,16 @@
     font-size: var(--font-size-80);
 }
 
+.u-font-42 {
+    font-size: var(--font-size-42);
+}
+
 .u-font-32 {
     font-size: var(--font-size-32);
+}
+
+.u-font-24 {
+    font-size: var(--font-size-24);
 }
 
 .u-font-20 {
@@ -24,6 +32,10 @@
 
 .u-font-16 {
     font-size: var(--font-size-16);
+}
+
+.u-font-12 {
+    font-size: var(--font-size-12);
 }
 
 // Graisses de texte
@@ -48,8 +60,16 @@ $bp_value in $breakpoints {
             font-size: var(--font-size-80);
         }
 
+        .u-font-42\@#{$bp} {
+            font-size: var(--font-size-42);
+        }
+
         .u-font-32\@#{$bp} {
             font-size: var(--font-size-32);
+        }
+
+        .u-font-24\@#{$bp} {
+            font-size: var(--font-size-24);
         }
 
         .u-font-20\@#{$bp} {
@@ -58,6 +78,10 @@ $bp_value in $breakpoints {
 
         .u-font-16\@#{$bp} {
             font-size: var(--font-size-16);
+        }
+
+        .u-font-12\@#{$bp} {
+            font-size: var(--font-size-12);
         }
 
     }
