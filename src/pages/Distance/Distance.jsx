@@ -5,7 +5,8 @@ import Title from "../../components/Title/Title";
 // import style from "./Distance.module.scss";
 import {useNavigate} from 'react-router-dom';
 // import { Slider } from "@material-ui/core";
-import TextChanger from "../../components/Range/TextChanger"
+import TextChanger from "../../components/Range/TextChanger";
+
 
 
 const Distance = () => {

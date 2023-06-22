@@ -1,15 +1,17 @@
 import * as React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About/About'
-import NotFound from './pages/NotFound/NotFound';
-import Onboarding from './pages/Onboarding/Onboarding';
-import OnboardingHasard from './pages/Onboarding/OnboardingHasard';
+import About from './pages/About'
+import Onboarding from './pages/Onboarding';
+import OnboardingHasard from './pages/OnboardingHasard';
 import Distance from './pages/Distance/Distance';
 import Loading from './pages/Loading/Loading';
-import BestPlaceCard from './pages/BestPlace/BestPlace';
 import './App.scss';
 import Destination from './pages/Destination/Destination';
+import Error from './pages/Error';
+import './App.scss';
+import BestPlaceCard from './pages/BestPlace';
+import Activities from './pages/Activities';
 
 export default function App() {
   return (
@@ -23,7 +25,8 @@ export default function App() {
         <Route path="/distance" element={<Distance />} />
         <Route path="/loading" element={<Loading />} />
         <Route path="/destination" element={<Destination />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/activities" element={<Activities />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );
