@@ -47,6 +47,10 @@
     --spacing-8: 0.8rem;
     --spacing-4: 0.4rem;
 
+    //Shadows
+
+    --elevation-2 :  0px 0px 0px 0px rgba(46, 49, 75, 0.10), 6px 18px 43px 0px rgba(46, 49, 75, 0.10);
+
     //Glass
     --glass: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, #FFFFFF 35.42%);
     --glassHover: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, #FFFFFF 35.42%);
