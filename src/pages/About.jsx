@@ -1,7 +1,6 @@
 
 import { Icon } from 'semantic-ui-react';
 import Button from '../components/Button/Button';
-import Footer from "../components/Footer/Footer";
 import { useEffect, useState } from 'react';
 
 
