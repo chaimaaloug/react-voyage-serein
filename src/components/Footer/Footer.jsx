@@ -41,11 +41,6 @@ const Footer = () => {
                 </div>
                 <div>
                     <p className="u-font-700 u-color--bleu-marine-700">
-                    Nos coordonnées
-                    </p>
-                </div>
-                <div>
-                    <p className="u-font-700 u-color--bleu-marine-700">
                     Nos réseaux sociaux
                     </p>
                     <div className={style.footerLinks}>

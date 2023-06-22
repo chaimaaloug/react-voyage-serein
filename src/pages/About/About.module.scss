@@ -1,14 +1,30 @@
 
 @import "../../scss/settings/variables";
 
-.container {
+.title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 2.78rem;
+    color: var(--bleu-marine);
+    font-family: var(--font-secondary);
+}
+
+.imagesContainer {
+    display: grid;
+    grid-template-columns: repeat();
+    grid-template-rows: repeat();
+    grid-gap: 20;
+}
+
+.heroContainer {
     background: url("../../assets/background/about-back.jpg");
-    height: 1316px;
+    height: 1200px;
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    overflow: hidden;
 
     //----------- First Section -----------//
     .aboutUs {
@@ -17,6 +33,7 @@
         backdrop-filter: blur(5px);
         width: 1005px;
         height: 560px;
+        margin-top: 14rem;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 72.4%), rgba(255, 255, 255, 0.4);
     
         .title {
@@ -46,19 +63,27 @@
     }
 }
 
-    .galleryContainer {
-        height: 1253px;
 
-        .gallery {
+//----------- Gallery Section -----------//
 
-        }
+.galleryContainer {
+    
+    .gallery {
+        width: 560px;
+        height: 742px;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
     }
+    
+}
 
-  //----------- Third Section -----------//
-  .testimonials {
-    background: radial-gradient(54.34% 54.88% at 19.65% 48.05%, rgba(255, 229, 0, 0.5) 20.46%, rgba(255, 229, 1, 0) 100%), radial-gradient(49.9% 45.36% at 47.85% 2.69%, #FF8700 0%, rgba(252, 133, 0, 0) 100%), radial-gradient(34.85% 60.87% at 67.88% -2.25%, rgba(255, 135, 0, 0.7) 0%, rgba(252, 133, 0, 0) 100%), radial-gradient(34.77% 77.22% at 96.63% -8.74%, rgba(239, 64, 53, 0.8) 0%, rgba(239, 64, 53, 0) 91.15%), #D1DCFF;
+
+//----------- Testimonials Section -----------//
+.testimonialsContainer {
+    
     padding: 3rem !important;
-    height: 642px;
 
     .leftCol {
         border-radius: 16px;
@@ -83,7 +108,7 @@
                 color: #FFE500;
                 margin-bottom: 2rem;
             }
-    
+
             .author {
                 margin-top: 1.88rem;
                 text-align: right;
@@ -98,14 +123,6 @@
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 72.4%), rgba(255, 255, 255, 0.4);
         border-radius: 16px;
 
-        .title {
-            font-size: 42px;
-            font-weight: 700;
-            margin-bottom: 2.78rem;
-            color: var(--bleu-marine);
-            font-family: var(--font-secondary);
-        }
-
         p {
             font-family: var(--font-primary);
             font-size: 16px;
@@ -116,21 +133,6 @@
         .parag {
             margin: 3rem 0;
         }
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-    .testimonials {
-        background-size: contain;
-        background-position: top;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .testimonials {
-        background-size: contain;
-        background-position: top;
     }
 }
 

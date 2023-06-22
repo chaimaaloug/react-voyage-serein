@@ -7,7 +7,7 @@
 .footerContent {
     display: flex;
     justify-content: space-between;
-    gap: 1.6rem;
+    gap: 100px !important;
 }
 
 .footerBottom {
@@ -34,9 +34,8 @@
     background-color: var(--bleu-marine);
     color: var(--blanc);
     padding: 7px 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    cursor: pointer;
+
 }
 
 .mediaLink {
