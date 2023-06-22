@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound/NotFound';
 import Onboarding from './pages/Onboarding/Onboarding';
 import OnboardingHasard from './pages/Onboarding/OnboardingHasard';
 import Distance from './pages/Distance/Distance';
+import Loading from './pages/Loading/Loading';
 import BestPlaceCard from './pages/BestPlace/BestPlace';
 import './App.scss';
 import Destination from './pages/Destination/Destination';
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/best-places" element={<BestPlaceCard />} />
         <Route path="/about" element={<About />} />
         <Route path="/distance" element={<Distance />} />
+        <Route path="/loading" element={<Loading />} />
         <Route path="/destination" element={<Destination />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
