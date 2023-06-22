@@ -10,8 +10,8 @@ const Distance = () => {
 
     const navigate = useNavigate();
 
-    const navigateToHome = () => {
-        navigate('/');
+    const navigateToDestination = () => {
+        navigate('/destination');
     };
 
 
@@ -30,7 +30,7 @@ const Distance = () => {
                     <p className="l-steps__description">Encore quelques instants avant de découvrir vos itinéraires de rêves.</p>
                     
                     {/* <button type="button" className="l-steps__button" disabled>C'est presque prêt</button> */}
-                    <button type="button" className="l-steps__button" onClick={navigateToHome}>C'est prêt !</button>
+                    <button type="button" className="l-steps__button" onClick={navigateToDestination}>C'est prêt !</button>
                 </div>
             </div>
         </>
