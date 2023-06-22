@@ -7,6 +7,20 @@
     color: var(--bleu-marine);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
+}
+
+.l-activities__content {
+    display: flex;
+    width: 731px;
+    padding: 16px 0px;
+    flex-direction: column;
+    align-items: center;
+    width: 731px;
+    gap: 24px;
+    border-radius: 8px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.40);
+    /* Glass02 */
+    backdrop-filter: blur(4px);
 }

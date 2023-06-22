@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import marche from '../../assets/🚶.svg';
-import monde from '../../assets/🌎.svg';
+import plage from '../../assets/🏖️.svg';
+import monde from '../../assets/🚵.svg';
 
 
 const ActivityChanger = () => {
@@ -25,12 +25,12 @@ const ActivityChanger = () => {
     
     return (
       <div className='l-steps__distance'>
-            <p className='l-steps__jaugeText'>{text}</p>
-            <input className='l-steps__jauge' type="range" defaultValue="0" min="0" max="4" step="1" onChange={handleChange} aria-label='Faites glisser le curseur pour choisir une distance, de 0 : rue à 4 : monde.'/>
-            <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", marginBottom: "15px" }}>
-                <img src={marche} alt="" />
-                <img src={monde} alt="" />
-            </div>
+          <p className='l-steps__jaugeText'>{text}</p>
+          <input className='l-steps__jauge' type="range" defaultValue="0" min="0" max="4" step="1" onChange={handleChange} aria-label='Faites glisser le curseur pour choisir une distance, de 0 : rue à 4 : monde.'/>
+          <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", marginBottom: "15px" }}>
+              <img src={plage} alt="" />
+              <img src={monde} alt="" />
+          </div>
       </div>
     );
   };
