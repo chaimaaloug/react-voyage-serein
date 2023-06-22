@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie';
-import * as animationData from '../../assets/Morphing_1.mp4.lottie.json'
+import * as animationData from '../../assets/Morphing_1.mp4.lottie (1).json'
 
 export default class LottieControl extends React.Component {
  
