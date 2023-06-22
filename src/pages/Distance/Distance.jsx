@@ -13,8 +13,8 @@ const Distance = () => {
 
     const navigate = useNavigate();
 
-    const navigateToHome = () => {
-        navigate('/');
+    const navigateToActivities = () => {
+        navigate('/activities');
     };
     
     // const [value, setValue] = React.useState(30);
@@ -46,7 +46,7 @@ const Distance = () => {
 
                     <Button 
                         text="Passez aux activités"
-                        onClick = {navigateToHome}
+                        onClick = {navigateToActivities}
                     />
                 </div>
             </div>    
