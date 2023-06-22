@@ -139,8 +139,6 @@ const About = () => {
                     <p className="l-testimonials__link">Contacter un conseiller</p>
                 </div>
             </div>
-            
-            <Footer />
         </>
     );
 } 
