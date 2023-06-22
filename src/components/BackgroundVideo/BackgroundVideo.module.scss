@@ -8,7 +8,8 @@
   z-index: -1;
 }
 
-.BackgroundVideo iframe {
+.BackgroundVideo iframe,
+.BackgroundVideo video {
     box-sizing: border-box;
     left: 50%;
     min-height: 100%;
