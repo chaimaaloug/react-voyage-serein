@@ -12,6 +12,15 @@
     text-align: center;
 }
 
+.l-onboardinghasard__container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .l-onboarding__progressBar {
     width: 100%;
     height: 8px;
@@ -43,6 +52,7 @@
 .l-onboarding__content-description {
     margin: 2.77rem 0;
     font-size: 24px;
+    color: var(--bleu-marine);
 }
 
 

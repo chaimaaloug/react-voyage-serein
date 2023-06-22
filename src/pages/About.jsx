@@ -2,13 +2,56 @@
 import { Icon } from 'semantic-ui-react';
 import Button from '../components/Button/Button';
 import Footer from "../components/Footer/Footer";
+import { useEffect, useState } from 'react';
+
 
 const About = () => {
 
+    const [hasScrolled, setHasScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const shouldScroll = scrollTop > 0;
+    
+          if (shouldScroll !== hasScrolled) {
+            setHasScrolled(shouldScroll);
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+    }, [hasScrolled]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const galleryImages = document.querySelectorAll('.l-photo');
+    
+          galleryImages.forEach((image) => {
+            const imageTop = image.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+    
+            const opacity = Math.max(0, (windowHeight - imageTop) / windowHeight);
+            image.style.opacity = opacity;
+
+          });
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
+    
     return (
         <>
             {/*-------------- Hero Section ----------------*/}
-            <div className="l-hero__container">
+            <div className={`l-hero__container ${hasScrolled ? 'scrolled' : ''}`}>
                 <div className="l-hero__content">
                     <h2 className="l-hero__title">Voyage Serein</h2>
                     <p className="l-hero__subtitle">Qui sommes-nous ?</p>
@@ -24,7 +67,7 @@ const About = () => {
             <div className="l-gallery__container">
                 <div className="l-photo__gallery">
                     <div className="l-gallery__column">
-                        <div className="l-photo l-photo__1">
+                        <div className="l-photo">
                             <img src={require('../assets/images/1.jpeg')} alt="" />
                         </div>
                         <div className="l-photo">
@@ -43,10 +86,10 @@ const About = () => {
                         </div>
                     </div>
                     <div className="l-gallery__column">
-                        <div className="l-photo l-photo__3">
+                        <div className="l-photo">
                             <img src={require('../assets/images/3.jpeg')} alt="" />
                         </div>
-                        <div className="l-photo l-photo__7">
+                        <div className="l-photo">
                             <img src={require('../assets/images/7.jpeg')} alt="" />
                         </div>
                         <div className="l-photo">
@@ -57,7 +100,7 @@ const About = () => {
                         <div className="l-photo">
                             <img src={require('../assets/images/4.jpeg')} alt="" />
                         </div>
-                        <div className="l-photo l-photo__8">
+                        <div className="l-photo">
                             <img src={require('../assets/images/8.jpeg')} alt="" />
                         </div>
                     </div>
@@ -96,7 +139,7 @@ const About = () => {
                     <p className="l-testimonials__link">Contacter un conseiller</p>
                 </div>
             </div>
-
+            
             <Footer />
         </>
     );

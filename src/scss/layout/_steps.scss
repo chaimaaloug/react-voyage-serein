@@ -73,14 +73,32 @@
     }
     
     .l-steps__distance {
-        font-size: 8em;
-        text-align: center;
     }
+    .l-steps__jaugeText {
+        font-family: var(--font-primary);
+        margin: 24px 0;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: 0em;
+        height: 76px;
+        width: 1013px;
+        left: 214px;
+        top: 218px;
+        border-radius: 8px;
+        padding: 8px 24px 8px 24px;
+        justify-content: space-between;
+        text-align: left;
+        border-radius: 8px;
+        box-shadow: 0px 1px 6px rgba(46, 49, 75, 0.15);
+      }
     .l-steps__jauge {
-        width: calc(90% / 3);
-        height: 50px;
+        --scale: 2;
+        width: calc(100% / var(--scale));
+        margin: 15px 0;
+        height: 20px;
         accent-color: var(--bleu-marine-800);
-        transform: scale(3);
+        transform: scale(var(--scale));
         filter: drop-shadow(0px 2px 5px rgba(23, 37, 105, 0.15));
     }
     .l-steps__jaugeText {

@@ -37,28 +37,13 @@ const Distance = () => {
                         <Title title="Vous partez de " />
                         <label className="l-steps__selectCityLabel" htmlFor="ville">
                             Sélectionnez votre ville:
-                            <input className="l-steps__selectCity" type="select" name="ville" id="ville" placeholder="Villizy-Villicoublay"/>
+                            <input className="l-steps__selectCity" type="tel" name="ville" id="ville" placeholder="Vélizy-Villacoublay"/>
                         </label>
                     </div>
                     <Title title="et vous pourriez aller jusqu'au bout"/>
                     
                     <TextChanger/>
 
-
-                    {/* <select name="distance" id="distance-select">
-                        <option value="rue">de la rue</option>
-                        <option value="region">de la région</option>
-                        <option value="pays">de votre pays</option>
-                        <option value="continent">du continent</option>
-                        <option value="monde">du mooooooooonnnnndddeeee</option>
-                    </select> */}
-                    
-                    {/* <div className="l-steps__distance">de la rue</div>
-                    <input className="l-steps__jauge" type="range" defaultValue="0" min="0" max="4" step="1" onChange={handleChange}/> */}
-                    <br />
-                    <br />
-                    <br />
-                    <br />
                     <Button 
                         text="Passez aux activités"
                         onClick = {navigateToHome}

@@ -3,21 +3,21 @@ import marche from '../../assets/🚶.svg';
 import monde from '../../assets/🌎.svg';
 
 
-const TextChanger = () => {
-    const [text, setText] = useState('de la rue');
+const ActivityChanger = () => {
+    const [text, setText] = useState('de vous prélasser au soleil');
     
     const handleChange = (event) => {
       const value = parseInt(event.target.value);
-      let newText = 'de la rue';
+      let newText = 'de vous prélasser au soleil';
   
       if (value === 1) {
-        newText = 'de la région';
+        newText = 'vous amuser avant tout';
       } else if (value === 2) {
-        newText = 'de votre pays';
+        newText = 'culture et d’aventure';
       } else if (value === 3) {
-        newText = 'du continent';
+        newText = 'faire des treks';
       } else if (value === 4) {
-        newText = 'du mooooooooonnnnndddeeee';
+        newText = 'dépasser vos limites';
       }
       
       setText(newText);
@@ -35,4 +35,4 @@ const TextChanger = () => {
     );
   };
   
-export default TextChanger;
+export default ActivityChanger;
