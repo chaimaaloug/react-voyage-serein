@@ -1,0 +1,17 @@
+
+.l-error__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--bleu-marine);
+}
+
+.l-error__title {
+    font-size: 320px; 
+}
+
+.l-error__description {
+    font-size: 40px;
+    font-weight: bold;
+}
