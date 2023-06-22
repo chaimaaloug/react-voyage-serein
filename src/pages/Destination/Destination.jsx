@@ -26,53 +26,45 @@ const Destination = () => {
 
     const navigate = useNavigate();
 
-    const navigateToOnboarding = () => {
-        navigate('/onboarding');
-    };
-
-    const navigateToOnboardingHasard = () => {
-        navigate('/onboarding-hasard');
-    };
-
     const ActivityList = [
         {
             id: 1,
-            image: require('../../assets/BestPlaces/3.jpg'),
+            image: require('../../assets/destination/1.png'),
             title: 'Ayutthaya',
             activity: 'Ayutthaya',
             text: 'Ancienne capitale du royaume de Siam, et son parc archéologique inscrit à l’Unesco',
         },
         {
             id: 2,
-            image: require('../../assets/BestPlaces/3.jpg'),
+            image: require('../../assets/destination/2.png'),
             title: 'Chiang Khan',
             activity: 'Chiang Khan',
             text: 'Chiang Khan est un village est parallèle au Mékong. De belles maisons sur pilotis invitent à la flânerie',
         },
         {
             id: 3,
-            image: require('../../assets/BestPlaces/3.jpg'),
+            image: require('../../assets/destination/3.png'),
             title: 'Ko Lipe',
             activity: 'Ko Lipe',
             text: 'Paradis tropical, avec ses plages de sable blanc et sa communauté de pêcheurs, « gitans de la mer »',
         },
         {
             id: 4,
-            image: require('../../assets/BestPlaces/3.jpg'),
+            image: require('../../assets/destination/4.png'),
             title: 'Chiang Mai',
             activity: 'Chiang Mai',
             text: 'Nœud du tourisme nord-thaïlaidais aux quelque 350 temples, camp de base pour des excursions',
         },
         {
             id: 5,
-            image: require('../../assets/BestPlaces/3.jpg'),
+            image: require('../../assets/destination/5.png'),
             title: 'Kanchanaburi',
             activity: 'Kanchanaburi',
             text: 'Une douce torpeur au bord de la rivière Kwaï, et son fameux pont',
         },
         {
             id: 6,
-            image: require('../../assets/BestPlaces/3.jpg'),
+            image: require('../../assets/destination/6.png'),
             title: 'Ko Pha Ngan',
             activity: 'Ko Pha Ngan',
             text: 'Plages idylliques et criques tourmentées, jungle et paysages montagneux propices aux randonnées',
@@ -82,39 +74,39 @@ const Destination = () => {
     const OtherDestinations = [
         {
             id: 1,
-            image: require('../../assets/BestPlaces/3.jpg'),
-            title: 'Ayutthaya',
-            text: 'Ancienne capitale du royaume de Siam, et son parc archéologique inscrit à l’Unesco',
+            image: require('../../assets/destination/7.png'),
+            title: 'Vietnam',
+            text: 'Là, tout n’est que rizières noyées, haies de bambous et chapeaux coniques, une Asie éternelle, préservée, vibrante et authentique.',
         },
         {
             id: 2,
-            image: require('../../assets/BestPlaces/3.jpg'),
-            title: 'Chiang Khan',
-            text: 'Chiang Khan est un village est parallèle au Mékong. De belles maisons sur pilotis invitent à la flânerie',
+            image: require('../../assets/destination/8.png'),
+            title: 'Cambodge',
+            text: 'Le paradoxe du Cambodge, c’est d’être médiatisé au travers de ce qu’il a donné de plus grandiose, Angkor, et de pire, les Khmers rouges.',
         },
         {
             id: 3,
-            image: require('../../assets/BestPlaces/3.jpg'),
-            title: 'Ko Lipe',
-            text: 'Paradis tropical, avec ses plages de sable blanc et sa communauté de pêcheurs, « gitans de la mer »',
+            image: require('../../assets/destination/9.png'),
+            title: 'Laos',
+            text: 'Le Laos cultive une tranquille nonchalance, rythmée par le cours du Mékong, véritable colonne vertébrale du pays.',
         },
         {
             id: 4,
-            image: require('../../assets/BestPlaces/3.jpg'),
-            title: 'Chiang Mai',
-            text: 'Nœud du tourisme nord-thaïlaidais aux quelque 350 temples, camp de base pour des excursions',
+            image: require('../../assets/destination/10.png'),
+            title: 'Botswana',
+            text: 'Le pays des Tswanas, du nom de l’ethnie principale du Botswana, occupe un vaste bassin sablonneux, tantôt nu et désolé, tantôt couvert de broussailles. Le Kalahari en forme la pièce centrale.',
         },
         {
             id: 5,
-            image: require('../../assets/BestPlaces/3.jpg'),
-            title: 'Kanchanaburi',
-            text: 'Une douce torpeur au bord de la rivière Kwaï, et son fameux pont',
+            image: require('../../assets/destination/11.png'),
+            title: 'Finland',
+            text: 'Une douce torpeur au bord de la rivière Kwaï, et son fameux pont. Une douce torpeur au bord de la rivière Kwaï, et son fameux pont. Une douce torpeur au bord de la rivière Kwaï.',
         },
         {
             id: 6,
-            image: require('../../assets/BestPlaces/3.jpg'),
-            title: 'Ko Pha Ngan',
-            text: 'Plages idylliques et criques tourmentées, jungle et paysages montagneux propices aux randonnées',
+            image: require('../../assets/destination/12.png'),
+            title: 'New York',
+            text: 'New York. Ceux qui n’y ont jamais posé les pieds la connaissent déjà, par le cinéma, les séries télé, la musique, la littérature. New York est une machine à rêves. ',
         },
     ];
 

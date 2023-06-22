@@ -33,7 +33,7 @@ const Footer = () => {
                     Voyage Serein
                     </p>
                     <div className={style.footerLinks}>
-                        <Link url="#" text="Qui sommes-nous ?" />
+                        <Link url="/about" text="Qui sommes-nous ?" />
                         <Link url="#" text="Besoin d’aide ?" />
                         <Link url="#" text="Nous contacter" />
                     </div>
