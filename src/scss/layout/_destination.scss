@@ -3,7 +3,7 @@
     background-color: var(--blanc);
     mix-blend-mode: normal;
     position: relative;
-    z-index: -2;
+    // z-index: -2;
 }
 .l-destination__background {
     -webkit-mask-image: url(../../assets/background/destination-cover.svg);

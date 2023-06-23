@@ -9,16 +9,23 @@
     min-height: 5.6rem;
     padding: 0 3.2rem;
     font-size: 16px;
-    
+
     &.buttonSecondary {
         background-color: var(--noir-900);
         border: 1px solid var(--noir-900);
     }
+
     &.buttonTertiary {
         fill: var(--noir);
         color: var(--noir);
         background-color: var(--Turquoise-100);
         border: 1px solid var(--Turquoise-100);
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 0px rgba(46, 49, 75, 0.10), 3px 3px 9px 0px rgba(46, 49, 75, 0.10), 13px 11px 17px 0px rgba(46, 49, 75, 0.09), 30px 24px 23px 0px rgba(46, 49, 75, 0.05), 54px 43px 28px 0px rgba(46, 49, 75, 0.01), 84px 67px 30px 0px rgba(46, 49, 75, 0.00);
     }
 }
 
@@ -32,6 +39,7 @@
         background-color: var(--Turquoise-100);
         border: 1px solid var(--Turquoise-100);
     }
+
     &.buttonTertiary {
         fill: var(--noir);
         color: var(--blanc-400);
