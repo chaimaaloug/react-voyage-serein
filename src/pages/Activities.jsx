@@ -29,7 +29,7 @@ const Activities = () => {
     
           // Update the state to trigger a re-render with the new background image
           setCurrentBackground(nextBackground);
-        }, 3000); // Change the background every 5 seconds
+        }, 2000); // Change the background every 5 seconds
     
         return () => clearInterval(interval); // Clean up the interval on component unmount
       }, [backgroundImages, currentBackground]);
