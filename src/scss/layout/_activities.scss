@@ -1,7 +1,9 @@
+
+
 .l-activities__container {
     width: 100%;
     min-height: 100vh;
-    background-image: url("../../assets/Activities/1.jpg");
+    background-image: url("../../assets/activities/1.jpg");
     background-size: cover;
     background-position: bottom;
     color: var(--bleu-marine);
@@ -9,6 +11,8 @@
     align-items: center;
     justify-content: flex-end;
     text-align: center;
+    position: relative;
+    padding: 3rem;
 }
 
 .l-activities__content {
@@ -19,6 +23,7 @@
     align-items: center;
     width: 731px;
     gap: 24px;
+    margin-top: -4rem;
     border-radius: 8px;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.40);
     backdrop-filter: blur(4px);
@@ -57,3 +62,40 @@
 .Fill85 {
     width: 85%;
 }
+
+.l-activity__jaugeText {
+    font-family: var(--font-primary);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
+    height: 76px;
+    width: 703px;
+    left: 214px;
+    top: 218px;
+    border-radius: 8px;
+    padding: 8px 24px 8px 24px;
+    justify-content: space-between;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0px 1px 6px rgba(46, 49, 75, 0.15);
+}
+
+.l-activity__jauge {
+    --scale: 2.67;
+    width: calc(80% / var(--scale));
+    margin-top: 35px;
+    margin-left: 25rem;
+    margin-bottom: -5rem;
+    accent-color: var(--bleu-marine-800);
+    transform: scale(var(--scale));
+    filter: drop-shadow(0px 2px 5px rgba(23, 37, 105, 0.15));
+}
+
+.l-activities__btn {
+    position: absolute;
+    bottom: 70px;
+    right: 50px; 
+}
+
+

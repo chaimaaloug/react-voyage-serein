@@ -19,7 +19,6 @@ const Activities = () => {
             <div className="l-activities__content">
                 <p className="l-activities__step">3/4</p>
                 <Title title="Vous avez envie de"/>
-                    <input className="l-steps__select-activity" type="text" name="activity" id="activity" placeholder="de vous prélasser au soleil"/>
                 <ActivityChanger />   
             </div>
             <div className="l-activities__btn">
