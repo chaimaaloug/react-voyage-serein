@@ -13,14 +13,17 @@ const Activities = () => {
    
     return (
         <div className="l-activities__container">
-            <div className="l-steps__progressBar">
-                <div className="l-steps__progressBarFill Fill50" ></div>
+            <div className="l-activities__progressBar">
+                <div className="l-activities__progressBarFill Fill85"></div>
             </div>
             <div className="l-activities__content">
-                <p className="l-steps__step">3/4</p>
+                <p className="l-activities__step">3/4</p>
                 <Title title="Vous avez envie de"/>
+                    <input className="l-steps__select-activity" type="text" name="activity" id="activity" placeholder="de vous prélasser au soleil"/>
                 <ActivityChanger />   
-                <Button text="Valider mes envies"   onClick = {navigateToLoading}/>
+            </div>
+            <div className="l-activities__btn">
+                <Button text="Valider mes envies" onClick = {navigateToLoading}/>
             </div>
         </div>
     )
