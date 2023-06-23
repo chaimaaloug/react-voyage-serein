@@ -195,22 +195,22 @@ const Destination = () => {
                     <div className='u-flex u-flex-gap-32 u-mb-64'>
                         <div>
                             <p>Ma mobilité durant le voyage</p>
-                        </div>
-                        <div className='l-steps__distance'>
-                            <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", marginBottom: "15px" }}>
-                                <span><img src={pied} alt="" />Se déplacer à pied</span>
-                                <input className='l-steps__jauge' type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.'/>
-                                <span><img src={avion} alt="" />Prendre l'avion</span>
+                            <div >
+                                <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", marginBottom: "15px" }}>
+                                    <span style={{ display: "flex", gap: "10px", margin: "0 5px", color: "var(--bleu-marine-700)" }}><img src={pied} alt="" />Se déplacer à pied</span>
+                                    <input type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.'/>
+                                    <span style={{ display: "flex", gap: "10px", margin: "0 5px", color: "var(--bleu-marine-700)" }}><img src={avion} alt="" />Prendre l'avion</span>
+                                </div>
                             </div>
                         </div>
                         <div>
                             <p>Mon envie de bouger</p>
-                        </div>
-                        <div className='l-steps__distance'>
-                            <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", marginBottom: "15px" }}>
-                                <span><img src={chill} alt="" />Peu actif</span>
-                                <input className='l-steps__jauge' type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.'/>
-                                <span><img src={sportif} alt="" />Très actif</span>
+                            <div>
+                                <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", marginBottom: "15px" }}>
+                                    <span style={{ display: "flex", gap: "10px", margin: "0 5px", color: "var(--bleu-marine-700)" }}><img src={chill} alt="" />Peu actif</span>
+                                    <input type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.'/>
+                                    <span style={{ display: "flex", gap: "10px", margin: "0 5px", color: "var(--bleu-marine-700)" }}><img src={sportif} alt="" />Très actif</span>
+                                </div>
                             </div>
                         </div>
                     </div>
