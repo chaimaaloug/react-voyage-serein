@@ -1,6 +1,7 @@
 
 import { Icon } from 'semantic-ui-react';
 import Button from '../components/Button/Button';
+import Header from '../components/Header/Header';
 import { useEffect, useState } from 'react';
 
 
@@ -48,7 +49,8 @@ const About = () => {
 
     
     return (
-        <>
+        <>  
+            <Header />
             {/*-------------- Hero Section ----------------*/}
             <div className={`l-hero__container ${hasScrolled ? 'scrolled' : ''}`}>
                 <div className="l-hero__content">
