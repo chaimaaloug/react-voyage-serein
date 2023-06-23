@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import plage from '../../assets/🏖️.svg';
 import monde from '../../assets/🚵.svg';
 
@@ -22,6 +22,8 @@ const ActivityChanger = () => {
       
       setText(newText);
     };
+
+   
     
     return (
       <div className=''>
