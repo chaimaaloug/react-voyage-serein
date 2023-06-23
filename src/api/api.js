@@ -4,8 +4,8 @@ const URL = 'https://travel-advisor.p.rapidapi.com/attractions/list-in-boundary?
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '2040471378msh40708ad7e3bf713p1b510fjsna9f220ff1641',
-		'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+    'X-RapidAPI-Key': '6c38da4933msh3d5b5f0511f52e3p141207jsn9e3a47d003bf',
+    'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
 	}
 };
 
