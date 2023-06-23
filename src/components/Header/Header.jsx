@@ -20,7 +20,7 @@ const Header = () => {
       <div className={style.HeaderNav}>
         <div className={style.HeaderLinks}>
           <Link header color="secondary" url="/about" text="Qui sommes-nous" />
-          <Link header url="#" text="Trouver une destination" />
+          <Link header url="/onboarding" text="Trouver une destination" />
         </div>
         <div>
           <SearchBar></SearchBar>

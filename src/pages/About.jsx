@@ -49,7 +49,7 @@ const About = () => {
 
     
     return (
-        <>  
+        <> 
             <Header />
             {/*-------------- Hero Section ----------------*/}
             <div className={`l-hero__container ${hasScrolled ? 'scrolled' : ''}`}>

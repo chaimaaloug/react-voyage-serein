@@ -211,7 +211,7 @@ const Destination = () => {
                             <div className='l-steps__distance'>
                                 <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", gap: "8px", marginBottom: "15px" }}>
                                     <span className='u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700'><img src={pied} alt="" />Se déplacer à pied</span>
-                                    <input className='l-steps__jauge' type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.' />
+                                    <input className='l-steps__jauge' style={{ accentColor: "var(--bleu-marine-800)" }} type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.' />
                                     <span className='u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700'><img src={avion} alt="" />Prendre l'avion</span>
                                 </div>
                             </div>
@@ -221,7 +221,7 @@ const Destination = () => {
                             <div className='l-steps__distance'>
                                 <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", gap: "8px", marginBottom: "15px" }}>
                                     <span className='u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700'><img src={chill} alt="" />Peu actif</span>
-                                    <input className='l-steps__jauge' type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.' />
+                                    <input className='l-steps__jauge' style={{ accentColor: "var(--bleu-marine-800)" }} type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.' />
                                     <span className='u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700'><img src={sportif} alt="" />Très actif</span>
                                 </div>
                             </div>
