@@ -21,15 +21,6 @@ import sportif from '../../assets/🏃.svg';
 
 const Destination = () => {
 
-    const [places, setPlaces] = useState([])
-    //get data from TravelAdvisor api
-    useEffect(() => {
-        getPlacesData()
-            .then((data) => {
-                setPlaces(data)
-            });
-    }, []);
-
     const navigate = useNavigate();
 
     const ActivityList = [
