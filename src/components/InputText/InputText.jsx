@@ -6,10 +6,10 @@ const InputText = (props) => {
 
     return (
         <div className={style.group}>
-            <input type="text" required />
+            <input class={style.inputText} type="text" required />
             <span class={style.highlight}></span>
             <span class={style.bar}></span>
-            <label>{label}</label>
+            <label class={style.labelText}>{label}</label>
         </div>
     );
 }
