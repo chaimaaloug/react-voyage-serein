@@ -10,6 +10,12 @@
     background-color: #F3F3F3;
     border-bottom: 2px solid #B0B0B0;
     padding: 1.2rem 1.6rem;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 0px rgba(46, 49, 75, 0.10), 3px 3px 9px 0px rgba(46, 49, 75, 0.10), 13px 11px 17px 0px rgba(46, 49, 75, 0.09), 30px 24px 23px 0px rgba(46, 49, 75, 0.05), 54px 43px 28px 0px rgba(46, 49, 75, 0.01), 84px 67px 30px 0px rgba(46, 49, 75, 0.00);
+    }
 }
 
 .tabActive {

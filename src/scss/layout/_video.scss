@@ -1,0 +1,26 @@
+.l-video {
+}
+
+.l-video__tabs {
+    max-width: 30.5rem;
+    width: 100%;
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.l-video__controls {
+    position: absolute;
+    left: 50%;
+    bottom: 4rem;
+    transform: translateX(-50%);
+    flex-shrink: 0;
+}
+
+.l-video__next-button {
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+}
