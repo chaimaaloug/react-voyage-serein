@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from "../../components/Header/Header";
 import Footer from '../../components/Footer/Footer';
 import BackgroundVideo from '../../components/BackgroundVideo/BackgroundVideo';
+// import BackgroundVideoCover from '../../assets/background/thailand.mp4';
 import ActivityCardList from '../../components/ActivityCard/ActivityCard';
 import DestinationCardList from '../../components/DestinationCard/DestinationCard';
 import { Icon } from "semantic-ui-react";
@@ -18,6 +19,7 @@ import pied from '../../assets/👣.svg';
 import avion from '../../assets/✈️.svg';
 import chill from '../../assets/😎.svg';
 import sportif from '../../assets/🏃.svg';
+import Dropdown from '../../components/Dropdown/Dropdown';
 
 const Destination = () => {
 
@@ -126,6 +128,24 @@ const Destination = () => {
             text: 'Veste imperméable léger ou poncho',
             count: '1 ou 2'
         },
+        {
+            id: 4,
+            icon: require('../../assets/icons/t-shirt.png'),
+            text: 'T-shirts légers',
+            count: '3'
+        },
+        {
+            id: 5,
+            icon: require('../../assets/icons/t-shirt.png'),
+            text: 'T-shirts manches longues',
+            count: '3'
+        },
+        {
+            id: 6,
+            icon: require('../../assets/icons/t-shirt.png'),
+            text: 'Veste imperméable léger ou poncho',
+            count: '1 ou 2'
+        },
     ]
 
     const usefulDressing = [
@@ -151,12 +171,14 @@ const Destination = () => {
 
     return (
         <div className='l-destination'>
-            <div className='u-container'>
-                <Header />
+            <div className='u-container u-position-relative u-zindex-0'>
                 <div className='l-destination__background'>
-                    {/* <BackgroundVideo isMediaVideo fullHeight url={backgroundVideoCover} /> */}
+                    {/* <BackgroundVideo isMediaVideo fullHeight url={BackgroundVideoCover} /> */}
                     <BackgroundVideo fullHeight url="https://www.youtube.com/embed/7sQJREI-Pe8" />
                 </div>
+            </div>
+            <div className='u-container u-position-relative u-zindex-1'>
+                <Header />
                 <div className='l-destination__header'>
                     <div className='l-destination__card u-flex-gap-32'>
                         <h2 className='u-font-42 u-font-secondary'>Thaïlande</h2>
@@ -180,27 +202,27 @@ const Destination = () => {
                         </div>
                     </div>
                 </div>
-                <div className='u-bgcolor--blanc'>
+                <div className='u-bgcolor--blanc u-pt-32  u-pb-32'>
                     <h2 className='u-font-primary u-font-32 u-font-400 u-mb-32'>Itinéraire conseillé pour vous</h2>
                     <p className='u-font-24 u-font-700 u-mb-24'>Modifier le parcours :</p>
                     <div className='u-flex u-flex-gap-32 u-mb-64'>
-                        <div>
-                            <p>Ma mobilité durant le voyage</p>
-                            <div >
-                                <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", marginBottom: "15px" }}>
-                                    <span style={{ display: "flex", gap: "10px", margin: "0 5px", color: "var(--bleu-marine-700)" }}><img src={pied} alt="" />Se déplacer à pied</span>
-                                    <input type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.'/>
-                                    <span style={{ display: "flex", gap: "10px", margin: "0 5px", color: "var(--bleu-marine-700)" }}><img src={avion} alt="" />Prendre l'avion</span>
+                        <div className='u-flex u-flex-column'>
+                            <p className='u-mb-16'>Ma mobilité durant le voyage</p>
+                            <div className='l-steps__distance'>
+                                <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", gap: "8px", marginBottom: "15px" }}>
+                                    <span className='u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700'><img src={pied} alt="" />Se déplacer à pied</span>
+                                    <input className='l-steps__jauge' type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.' />
+                                    <span className='u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700'><img src={avion} alt="" />Prendre l'avion</span>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <p>Mon envie de bouger</p>
-                            <div>
-                                <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", marginBottom: "15px" }}>
-                                    <span style={{ display: "flex", gap: "10px", margin: "0 5px", color: "var(--bleu-marine-700)" }}><img src={chill} alt="" />Peu actif</span>
-                                    <input type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.'/>
-                                    <span style={{ display: "flex", gap: "10px", margin: "0 5px", color: "var(--bleu-marine-700)" }}><img src={sportif} alt="" />Très actif</span>
+                        <div className='u-flex u-flex-column'>
+                            <p className='u-mb-16'>Mon envie de bouger</p>
+                            <div className='l-steps__distance'>
+                                <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", gap: "8px", marginBottom: "15px" }}>
+                                    <span className='u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700'><img src={chill} alt="" />Peu actif</span>
+                                    <input className='l-steps__jauge' type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.' />
+                                    <span className='u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700'><img src={sportif} alt="" />Très actif</span>
                                 </div>
                             </div>
                         </div>
@@ -211,21 +233,32 @@ const Destination = () => {
                 </div>
                 <div className='u-bgcolor--blanc'>
                     <h2 className='u-font-primary u-font-32 u-font-400 u-mb-32'>Ajouter des activités à mon voyage</h2>
-                        <div className='u-flex u-mb-32'>
-                            <div className="u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700 u-font-700">
-                                <Icon name="shuffle" size="small" className="icon" />
-                                <p>
-                                    Me proposer des activités au hasard
-                                </p>
+                    <div className='u-flex u-flex-gap-32 u-mb-32'>
+                        <div className="u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700 u-font-700">
+                            <Icon name="shuffle" size="small" className="icon" />
+                            <p>
+                                Me proposer des activités au hasard
+                            </p>
+                        </div>
+                        <div className="u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700 u-font-700">
+                            <Icon name="shuffle" size="small" className="icon" />
+                            Filtrer
+                        </div>
+                        <div className='u-flex u-flex-grow u-flex-gap-32'>
+                            <div className='u-flex-grow'>
+                                <p className='u-font-12 u-color--bleu-marine u-mb-8'>A proximité de</p>
+                                <Dropdown/>
                             </div>
-                            <div>
-                                <Icon name="shuffle" size="large" className="icon" />
-                                Filtrer
+                            <div className='u-flex-grow'>
+                                <p className='u-font-12 u-color--bleu-marine u-mb-8'>Trier par type d’activité</p>
+                                <Dropdown/>
                             </div>
-                            <div>
-                                {/* <Dropdown/> */}
+                            <div className='u-flex-grow'>
+                                <p className='u-font-12 u-color--bleu-marine u-mb-8'>Trier par type de déplacement</p>
+                                <Dropdown/>
                             </div>
                         </div>
+                    </div>
                     <ActivityCardList data={ActivityList} />
                     <div className='u-mt-32 u-pb-32 u-text-center'>
                         <Button text="Charger plus d'activités" />
@@ -234,7 +267,7 @@ const Destination = () => {
                 <div className='u-bgcolor--blanc u-pb-64'>
                     <h2 className='u-font-primary u-font-32 u-font-400 u-mb-32'>Nos conseils pour partir sereinement</h2>
                     <div className='u-flex u-flex-justify-between u-flex-gap-24'>
-                        <div style={{ 'max-width': 512, 'width': '100%'}}>
+                        <div style={{ 'max-width': 512, 'width': '100%' }}>
                             <p className='u-font-secondary u-font-24 u-font-700 u-mb-24'>Avant de partir</p>
                             <ul>
                                 <li><span className='u-color--bleu-marine-800 u-font-700'>Passeport :</span> pensez à vérifier qu’il dispose bien d’une page vierge et qu’il est valable plus de 6 mois après la date de retour. </li>
@@ -249,8 +282,8 @@ const Destination = () => {
                             <p className='u-mb-24'><span className='u-color--bleu-marine-800 u-font-700'>Monnaie locale :</span> le Baht (l’équivalence en euro est environ à 1 Baht = 0.027€)</p>
                             <p className='u-mb-24'>Convertir mon argent en Baht :</p>
                             <div>
-                                <InputText label='Euro' className="u-mb-24"/>
-                                <InputText label='Baht'/>
+                                <InputText label='Euro' className="u-mb-24" />
+                                <InputText label='Baht' />
                             </div>
                             <p className='u-font-12 u-color--bleu-marine-800 u-mt-24'>Changez votre monnaie sur place pour réduire ou éviter les commissions, mais nous vous conseillons de changer votre argent au fur et à mesure pour ne jamais se retrouver avec une trop grande quantité de liquide sur vous.</p>
                         </div>
@@ -264,11 +297,11 @@ const Destination = () => {
                             <div className='u-flex u-flex-justify-between u-flex-gap-24'>
                                 <div>
                                     <p className='u-font-20 u-font-700 u-mb-16'>Indispensable</p>
-                                    <DressingCard data={indispensableDressing}/>
+                                    <DressingCard data={indispensableDressing} />
                                 </div>
                                 <div>
                                     <p className='u-font-20 u-font-700 u-mb-16'>Très utile</p>
-                                    <DressingCard data={usefulDressing}/>
+                                    <DressingCard data={usefulDressing} />
                                 </div>
                             </div>
                         </div>
