@@ -8,8 +8,8 @@ const Onboarding = () => {
 
     const navigate = useNavigate();
 
-    const navigateToBestPlaces = () => {
-        navigate('/best-places');
+    const navigateToVideos = () => {
+        navigate('/video');
     };
 
     return (
@@ -27,7 +27,7 @@ const Onboarding = () => {
                     <p className="l-onboarding__content-description"> Notre conseil : Mettez vos écouteurs pour encore plus d’immersion.</p>
                     <Button 
                         text="Allons-y !"
-                        onClick = {navigateToBestPlaces}
+                        onClick = {navigateToVideos}
                     />
                 </div>
             </div>    

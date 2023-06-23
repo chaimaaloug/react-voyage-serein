@@ -17,8 +17,8 @@ const Distance = () => {
 
     const navigate = useNavigate();
 
-    const navigateToActivities = () => {
-        navigate('/activities');
+    const navigateToBestPlaces = () => {
+        navigate('/best-places');
     };
 
     // const [value, setValue] = React.useState(30);
@@ -43,7 +43,9 @@ const Distance = () => {
                 <img src={VideoControl} alt="" />
             </div>
             <div className="l-video__next-button">
-                <Button outline text="J'ai fait mon choix" />
+                <Button outline text="J'ai fait mon choix" 
+                    onClick = {navigateToBestPlaces}
+                />
             </div>
         </div>
     );
