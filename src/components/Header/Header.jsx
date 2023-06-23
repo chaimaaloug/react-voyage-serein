@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className={classes}>
       <div className='u-flex-self-center u-flex-shrink-none'>
-        <img src={logo} />
+        <a href="/"><img src={logo} /></a>
       </div>
       <div className={style.HeaderNav}>
         <div className={style.HeaderLinks}>
