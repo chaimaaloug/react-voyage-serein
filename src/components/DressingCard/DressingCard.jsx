@@ -16,7 +16,7 @@ const DressingCardItem = (props) => {
 
     return (
         <div className={style.DressingCardItem}>
-            <img src={icon} alt="" srcset="" width={34} height={34} />
+            <img src={icon} alt="" width={34} height={34} />
             <p className="u-flex-grow">
                 {text}
             </p>

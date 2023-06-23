@@ -11,7 +11,9 @@ import { Icon } from "semantic-ui-react";
 import Link from '../../components/Link/Link';
 import Rating from '../../components/Rating/Rating';
 import DressingCard from '../../components/DressingCard/DressingCard';
-import ItineraireMap from '../../components/itineraireMap/itineraireMap'
+import ItineraireMap from '../../components/itineraireMap/itineraireMap';
+import InputText from '../../components/InputText/InputText';
+// import Dropdown from '../../components/Dropdowns/Dropdown'
 
 const Destination = () => {
 
@@ -113,19 +115,19 @@ const Destination = () => {
     const indispensableDressing = [
         {
             id: 1,
-            picto: require('../../assets/icons/more.svg'),
+            icon: require('../../assets/icons/t-shirt.png'),
             text: 'T-shirts légers',
             count: '3'
         },
         {
             id: 2,
-            picto: require('../../assets/icons/more.svg'),
+            icon: require('../../assets/icons/t-shirt.png'),
             text: 'T-shirts manches longues',
             count: '3'
         },
         {
             id: 3,
-            picto: require('../../assets/icons/more.svg'),
+            icon: require('../../assets/icons/t-shirt.png'),
             text: 'Veste imperméable léger ou poncho',
             count: '1 ou 2'
         },
@@ -134,19 +136,19 @@ const Destination = () => {
     const usefulDressing = [
         {
             id: 1,
-            picto: require('../../assets/icons/more.svg'),
+            icon: require('../../assets/icons/t-shirt.png'),
             text: 'T-shirts légers',
             count: '3'
         },
         {
             id: 2,
-            picto: require('../../assets/icons/more.svg'),
+            icon: require('../../assets/icons/t-shirt.png'),
             text: 'T-shirts manches longues',
             count: '3'
         },
         {
             id: 3,
-            picto: require('../../assets/icons/more.svg'),
+            icon: require('../../assets/icons/t-shirt.png'),
             text: 'Veste imperméable léger ou poncho',
             count: '1 ou 2'
         },
@@ -200,10 +202,9 @@ const Destination = () => {
                 </div>
                 <div className='u-bgcolor--blanc'>
                     <h2 className='u-font-primary u-font-32 u-font-400 u-mb-32'>Ajouter des activités à mon voyage</h2>
-                    <div>
-                        <div className='u-flex'>
-                            <div className="shuffle">
-                                <Icon name="shuffle" size="large" className="icon" />
+                        <div className='u-flex u-mb-32'>
+                            <div className="u-flex u-flex-align-center u-flex-gap-8 u-color--bleu-marine-700 u-font-700">
+                                <Icon name="shuffle" size="small" className="icon" />
                                 <p>
                                     Me proposer des activités au hasard
                                 </p>
@@ -212,9 +213,10 @@ const Destination = () => {
                                 <Icon name="shuffle" size="large" className="icon" />
                                 Filtrer
                             </div>
+                            <div>
+                                {/* <Dropdown/> */}
+                            </div>
                         </div>
-                        <div></div>
-                    </div>
                     <ActivityCardList data={ActivityList} />
                     <div className='u-mt-32 u-pb-32 u-text-center'>
                         <Button text="Charger plus d'activités" />
@@ -223,18 +225,25 @@ const Destination = () => {
                 <div className='u-bgcolor--blanc u-pb-64'>
                     <h2 className='u-font-primary u-font-32 u-font-400 u-mb-32'>Nos conseils pour partir sereinement</h2>
                     <div className='u-flex u-flex-justify-between u-flex-gap-24'>
-                        <div style={{ 'max-width': 512 }}>
+                        <div style={{ 'max-width': 512, 'width': '100%'}}>
                             <p className='u-font-secondary u-font-24 u-font-700 u-mb-24'>Avant de partir</p>
                             <ul>
-                                <li><span className='u-color--bleu-marine-800'>Passeport :</span> pensez à vérifier qu’il dispose bien d’une page vierge et qu’il est valable plus de 6 mois après la date de retour. </li>
-                                <li className='u-mt-16'><span className='u-color--bleu-marine-800'>Visa :</span> indispensable pour des séjours de plus de 5 jours.</li>
-                                <li className='u-mt-16'><span className='u-color--bleu-marine-800'>Vaccins :</span> vaccins universels, hépatite A, fièvre typhoïde, encéphalite japonaise.</li>
-                                <li className='u-mt-16'><span className='u-color--bleu-marine-800'>Permis de conduire international</span> si vous avez prévu de conduire sur place. Attention à la circulation qui n’a rien à voir avec les conditions Européennes !</li>
-                                <li className='u-mt-16'><span className='u-color--bleu-marine-800'>Photocopies de vos papiers</span> comme la carte d’identité, passeport, billets d’avion… Dispersez-les dans vos bagages et ne les rangez pas avec les originaux ! Vous pouvez aussi gardez des copies numériques sur votre téléphone / ordinateur portable ou dans un Cloud.</li>
+                                <li><span className='u-color--bleu-marine-800 u-font-700'>Passeport :</span> pensez à vérifier qu’il dispose bien d’une page vierge et qu’il est valable plus de 6 mois après la date de retour. </li>
+                                <li className='u-mt-16'><span className='u-color--bleu-marine-800 u-font-700'>Visa :</span> indispensable pour des séjours de plus de 5 jours.</li>
+                                <li className='u-mt-16'><span className='u-color--bleu-marine-800 u-font-700'>Vaccins :</span> vaccins universels, hépatite A, fièvre typhoïde, encéphalite japonaise.</li>
+                                <li className='u-mt-16'><span className='u-color--bleu-marine-800 u-font-700'>Permis de conduire international</span> si vous avez prévu de conduire sur place. Attention à la circulation qui n’a rien à voir avec les conditions Européennes !</li>
+                                <li className='u-mt-16'><span className='u-color--bleu-marine-800 u-font-700'>Photocopies de vos papiers</span> comme la carte d’identité, passeport, billets d’avion… Dispersez-les dans vos bagages et ne les rangez pas avec les originaux ! Vous pouvez aussi gardez des copies numériques sur votre téléphone / ordinateur portable ou dans un Cloud.</li>
                             </ul>
                         </div>
-                        <div>
+                        <div style={{ 'max-width': 512, 'width': '100%' }}>
                             <p className='u-font-secondary u-font-24 u-font-700 u-mb-24'>Monnaie en Thaïlande</p>
+                            <p className='u-mb-24'><span className='u-color--bleu-marine-800 u-font-700'>Monnaie locale :</span> le Baht (l’équivalence en euro est environ à 1 Baht = 0.027€)</p>
+                            <p className='u-mb-24'>Convertir mon argent en Baht :</p>
+                            <div>
+                                <InputText label='Euro' className="u-mb-24"/>
+                                <InputText label='Baht'/>
+                            </div>
+                            <p className='u-font-12 u-color--bleu-marine-800 u-mt-24'>Changez votre monnaie sur place pour réduire ou éviter les commissions, mais nous vous conseillons de changer votre argent au fur et à mesure pour ne jamais se retrouver avec une trop grande quantité de liquide sur vous.</p>
                         </div>
                     </div>
                     <div className='u-mt-64'>
