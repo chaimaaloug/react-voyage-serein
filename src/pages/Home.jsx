@@ -8,14 +8,14 @@ import Footer from '../components/Footer/Footer';
 
 const Home = () => {
 
-    const [places, setPlaces] = useState([])
+    {/*const [places, setPlaces] = useState([])
     //get data from TravelAdvisor api
     useEffect(() => {
         getPlacesData()
             .then((data) => {
                 setPlaces(data)
             });
-    }, []);
+    }, []);*/}
 
     const navigate = useNavigate();
 
