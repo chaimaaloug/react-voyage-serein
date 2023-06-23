@@ -14,6 +14,10 @@ import DressingCard from '../../components/DressingCard/DressingCard';
 import ItineraireMap from '../../components/itineraireMap/itineraireMap';
 import InputText from '../../components/InputText/InputText';
 // import Dropdown from '../../components/Dropdowns/Dropdown'
+import pied from '../../assets/👣.svg';
+import avion from '../../assets/✈️.svg';
+import chill from '../../assets/😎.svg';
+import sportif from '../../assets/🏃.svg';
 
 const Destination = () => {
 
@@ -192,8 +196,22 @@ const Destination = () => {
                         <div>
                             <p>Ma mobilité durant le voyage</p>
                         </div>
+                        <div className='l-steps__distance'>
+                            <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", marginBottom: "15px" }}>
+                                <span><img src={pied} alt="" />Se déplacer à pied</span>
+                                <input className='l-steps__jauge' type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.'/>
+                                <span><img src={avion} alt="" />Prendre l'avion</span>
+                            </div>
+                        </div>
                         <div>
                             <p>Mon envie de bouger</p>
+                        </div>
+                        <div className='l-steps__distance'>
+                            <div style={{ display: "flex", width: "100%", alignItems: "center", justifyContent: "space-between", marginBottom: "15px" }}>
+                                <span><img src={chill} alt="" />Peu actif</span>
+                                <input className='l-steps__jauge' type="range" defaultValue="0" min="0" max="4" step="1" aria-label='Faites glisser le curseur pour choisir votre mobilité, de 0 : à pied à 4 : en avion.'/>
+                                <span><img src={sportif} alt="" />Très actif</span>
+                            </div>
                         </div>
                     </div>
                     <div>
