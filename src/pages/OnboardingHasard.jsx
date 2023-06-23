@@ -1,8 +1,16 @@
 
 import Button from "../components/Button/Button";
 import Title from "../components/Title/Title";
+import {useNavigate} from 'react-router-dom';
 
 const OnboardingHasard = () => {
+
+    const navigate = useNavigate();
+
+    const navigateToDestination = () => {
+        navigate('/destination');
+    };
+
     return (
         <>
             <div className="l-onboardinghasard__container">
@@ -14,6 +22,7 @@ const OnboardingHasard = () => {
                     <p className="l-onboarding__content-description">Astérix et Obélix mission Cléopâtre</p>
                     <Button 
                         text="C’est prêt !"
+                        onClick={navigateToDestination}
                     />
                 </div>
             </div>    
